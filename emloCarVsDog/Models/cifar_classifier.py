@@ -3,7 +3,7 @@ import torch
 from lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric
 from torchmetrics.classification.accuracy import Accuracy
-from einops import repeat
+# from einops import repeat
 
 
 class TimmLitModule(LightningModule):
