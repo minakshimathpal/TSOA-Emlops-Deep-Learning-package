@@ -8,13 +8,14 @@ Pytorch Image Models - PyTorch Image Models (timm) is a collection of image mode
 ## How to run
  - Install dependencies
 ### clone project
-git clone https://github.com/minakshimathpal/The-School-of-AI.git
-cd The-School-of-AI
+- git clone https://github.com/minakshimathpal/The-School-of-AI.git
+- cd The-School-of-AI
 
 
 
 ### install requirements
 pip install -r requirements.txt
-##Train model with default configuration
-# train on CPU
+
+## Train model with default configuration
+## train on CPU
 python emloCarVsDog/train.py trainer=cpu
