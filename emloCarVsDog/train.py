@@ -5,7 +5,7 @@ import torch
 import hydra
 from omegaconf import DictConfig
 
-from copper import utils
+from emloCarVsDog import utils
 
 log = utils.get_pylogger(__name__)
 
@@ -13,13 +13,25 @@ log = utils.get_pylogger(__name__)
 @utils.task_wrapper
 def train(cfg: DictConfig) -> Tuple[dict, dict]:
     """
-    set seed for random number generators in pytorch, numpy and python.random
+    Trains the model. Can additionally evaluate on a testset, using best weights obtained during
+    training.
+
+    This method is wrapped in optional @task_wrapper decorator, that controls the behavior during
+    failure. Useful for multiruns, saving info about the crash, etc.
+
+    Args:
+        cfg (DictConfig): Configuration composed by Hydra.
+
+    Returns:
+        Tuple[dict, dict]: Dict with metrics and dict with all instantiated objects.
+       
+    
     1) here we are downloading data by calling hydra.utils.instantiate(cfg.data)
     2) instantiating the model using hydra.utils.instantiate(cfg.model)
     3) instantiating the lightining model hydra.utils.instantiate(cfg.trainer)
        
     """
-     
+    # set seed for random number generators in pytorch, numpy and python.random
     if cfg.get("seed"):
         L.seed_everything(cfg.seed, workers=True)
 

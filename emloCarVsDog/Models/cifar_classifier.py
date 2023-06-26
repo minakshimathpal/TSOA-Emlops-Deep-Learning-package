@@ -3,6 +3,7 @@ import torch
 from lightning import LightningModule
 from torchmetrics import MaxMetric, MeanMetric
 from torchmetrics.classification.accuracy import Accuracy
+from torchvision import transforms as T
 # from einops import repeat
 
 
@@ -15,7 +16,7 @@ class TimmLitModule(LightningModule):
 
         self.save_hyperparameters(logger=False,ignore=['net'])   
         self.net= net
-        self.net.fc= torch.nn.Linear(self.net.fc.in_features,out_features=num_classes)
+        # self.net.fc= torch.nn.Linear(self.net.fc.in_features,out_features=num_classes)
 
         # loss function
         self.criterion = torch.nn.CrossEntropyLoss()
@@ -32,10 +33,15 @@ class TimmLitModule(LightningModule):
 
         # for tracking best so far validation accuracy
         self.val_acc_best = MaxMetric()
+        self.predict_transform = torch.nn.Sequential(
+            T.Resize([224, 224]),
+            T.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+            # T.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
+        )
 
 
     def forward(self,x: torch.Tensor):
-        output= self.net(x).logits
+        output= self.net(x)
         return output
     
     def on_train_start(self):
@@ -124,8 +130,7 @@ class TimmLitModule(LightningModule):
         return {"optimizer": optimizer}
     
 
-        
-            
+
 
 
 
