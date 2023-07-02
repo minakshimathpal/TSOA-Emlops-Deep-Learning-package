@@ -1,8 +1,0 @@
-README.md
-setup.py
-configs/__init__.py
-emloCarVsDog.egg-info/PKG-INFO
-emloCarVsDog.egg-info/SOURCES.txt
-emloCarVsDog.egg-info/dependency_links.txt
-emloCarVsDog.egg-info/requires.txt
-emloCarVsDog.egg-info/top_level.txt
