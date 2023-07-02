@@ -6,7 +6,7 @@ import hydra
 from omegaconf import DictConfig
 import sys
 sys.path.append("./")
-from classifier.utils import *
+from classifier.utils import pylogger,utils
 
 log = pylogger.get_pylogger(__name__)
 
