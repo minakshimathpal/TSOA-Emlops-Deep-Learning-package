@@ -12,7 +12,7 @@ defaults:
 
   # experiment configs allow for version control of specific hyperparameters
   # e.g. best hyperparameters for given model and datamodule
-  - experiment: null
+  - experiments: null
 
 # task name, determines output directory path
 task_name: "train"
