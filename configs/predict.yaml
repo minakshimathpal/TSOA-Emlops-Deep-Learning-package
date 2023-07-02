@@ -8,27 +8,25 @@ defaults:
   - model: vit.yaml
   - paths: default.yaml
   - trainer: default.yaml
-  - hydra: default.yaml
 
-  # experiment configs allow for version control of specific hyperparameters
-  # e.g. best hyperparameters for given model and datamodule
-  - experiment: null
 
 # task name, determines output directory path
-task_name: "train"
+task_name: "predict"
 
 # set False to skip model training
-train: True
+train: False
 
 # evaluate on test set, using best model weights achieved during training
 # lightning chooses best weights based on the metric specified in checkpoint callback
-test: True
+test: False
+
+predict: True
 
 # compile model for faster training with pytorch 2.0
 compile: False
 
 # simply provide checkpoint path to resume training
-train_dataset:ckpt_path: 
+test_ckpt_path: null
 
 # seed for random number generators in pytorch, numpy and python.random
 seed: null

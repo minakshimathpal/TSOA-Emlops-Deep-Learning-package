@@ -8,6 +8,7 @@ defaults:
   - model: cifar.yaml
   - paths: default.yaml
   - trainer: default.yaml
+  - experiments: null
 
 
 # task name, determines output directory path
@@ -24,7 +25,7 @@ test: True
 compile: False
 
 # simply provide checkpoint path to resume training
-ckpt_path: null
+test_ckpt_path: null
 
 # seed for random number generators in pytorch, numpy and python.random
 seed: null

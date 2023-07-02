@@ -4,10 +4,11 @@ import lightning as L
 import torch
 import hydra
 from omegaconf import DictConfig
+import sys
+sys.path.append("./")
+from classifier.utils import *
 
-from emloCarVsDog import utils
-
-log = utils.get_pylogger(__name__)
+log = pylogger.get_pylogger(__name__)
 
 
 @utils.task_wrapper

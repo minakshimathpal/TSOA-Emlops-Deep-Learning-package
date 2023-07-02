@@ -1,6 +1,5 @@
 _target_: dl_pkg.models.vit_module.VitLitModule
 
-
 num_classes: 1000
 topk: 2
 
