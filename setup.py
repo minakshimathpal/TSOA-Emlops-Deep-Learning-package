@@ -12,8 +12,9 @@ setup(
     # use this to customize global commands available in the terminal after installing the package
     entry_points={
         "console_scripts": [
-            "copper_train = copper.train:main",
-            "copper_eval = copper.eval:main",
+            "classifier_train = classifier.train:main",
+            "classifier_eval = classifier.eval:main",
+            "classifier_predict = classifier.predict:main"
         ]
     },
 )
