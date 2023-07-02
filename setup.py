@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="emloCarVsDog",
+    name="classifier",
     version="0.0.1",
     description="PyTorch Lightning Cat vs Dog Classifier",
     author="Minakshi",
