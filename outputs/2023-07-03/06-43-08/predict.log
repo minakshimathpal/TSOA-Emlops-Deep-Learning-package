@@ -1,0 +1,4 @@
+[2023-07-03 06:43:08,367][classifier.predict][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-07-03 06:43:08,475][classifier.predict][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-07-03 06:43:08,503][classifier.predict][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-07-03 06:43:08,588][classifier.predict][INFO] - Starting Prediction!

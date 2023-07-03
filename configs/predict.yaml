@@ -8,7 +8,7 @@ defaults:
   - model: vit.yaml
   - paths: default.yaml
   - trainer: default.yaml
-
+  - experiments: null
 
 # task name, determines output directory path
 task_name: "predict"

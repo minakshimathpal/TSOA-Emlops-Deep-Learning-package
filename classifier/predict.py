@@ -4,9 +4,9 @@ import torch
 import hydra
 from omegaconf import DictConfig
 
-from dl_pkg import utils
+from classifier.utils import pylogger
 
-log = utils.get_pylogger(__name__)
+log = pylogger.get_pylogger(__name__)
 
 
 #@utils.task_wrapper

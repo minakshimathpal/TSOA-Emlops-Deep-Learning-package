@@ -8,4 +8,4 @@ RUN pip3 install -r requirements.txt && rm -rf /root/.cache/pip
 
 COPY . .
 
-CMD ["python", "emloCarVsDog/train.py","emloCarVsDog/eval.py"]
+CMD ["python", "classifier/train.py","classifier/eval.py","classifier/predict.py"]

@@ -1,0 +1,13 @@
+[2023-07-03 06:39:16,764][classifier.eval][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-07-03 06:39:16,873][classifier.eval][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-07-03 06:39:16,901][classifier.eval][INFO] - Instantiating loggers...
+[2023-07-03 06:39:16,902][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/eval.py", line 35, in evaluate
+    logger: List[LightningLoggerBase] = instantiators.instantiate_loggers(cfg.get("logger"))
+                                        ^^^^^^^^^^^^^
+NameError: name 'instantiators' is not defined
+[2023-07-03 06:39:16,904][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/outputs/2023-07-03/06-39-16
