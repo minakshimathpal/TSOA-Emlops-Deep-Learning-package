@@ -95,3 +95,20 @@ Running Experiments you would see somthing like this
 ![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/terminal.png)
 
 </div>
+
+## DVC Configuration
+#Set remote storage for storing data and model artifacts
+```bash
+dvc remote add -d local <path_to_local_directory>
+
+#Push data to remote directory
+dvc push data outputs
+
+#Pull data from remote directory
+dvc pull
+```
+## Maintainers
+  1. Minakshi Mathpal
+  2. Jyotish Chandrasenan
+  3. Sridhar Baskaran
+  4. Ebin
