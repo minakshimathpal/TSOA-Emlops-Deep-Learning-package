@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 
 Template contains example with cat vs Dog  classification.
-When running python classifier/train.py you should see something like this:
+When running ```python classifier/train.py``` or ```classifier_train``` you should see something like this:
 <div align="center">
 
 ![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/terminal.png)
