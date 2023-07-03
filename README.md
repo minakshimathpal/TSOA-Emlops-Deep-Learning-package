@@ -48,7 +48,7 @@ When running python classifier/train.py you should see something like this:
 <summary><b>Override any config parameter from command line</b></summary>
 
 ```bash
-python train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
+python classifier/train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
 ```
 
 > **Note**: You can also add new parameters with `+` sign.
