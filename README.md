@@ -82,16 +82,16 @@ python classifier/train.py experiments=example
 </details>
 
 Running Experiments you would see somthing like this 
-- Training using  ```classifier/train.py experiments=cat_dog`` or ```classifier_train experiments=cat_dog``` :
+- Training using  ```classifier/train.py experiments=cat_dog```  or  ```classifier_train experiments=cat_dog``` :
 <div align="center">
 
-![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/artifacts/experiments.png)
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/terminal.png)
 
 </div>
 
-- Evaluation using  ```classifier/eval.py experiments=cat_dog`` or ```classifier_eval experiments=cat_dog``` :
+- Evaluation using  ```classifier/eval.py experiments=cat_dog``` or ```classifier_eval experiments=cat_dog``` :
 <div align="center">
 
-![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/artifacts/experiment_eval.png)
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/terminal.png)
 
 </div>
