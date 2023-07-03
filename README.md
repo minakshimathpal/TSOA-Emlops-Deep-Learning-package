@@ -40,25 +40,27 @@ When running python classifier/train.py you should see something like this:
 
 ![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/terminal.png)
 
+</div>
+
 ## ⚡  Your Superpowers
 
 <details>
 <summary><b>Override any config parameter from command line</b></summary>
 
 ```bash
-python classifier/train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
+python train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
 ```
 
 > **Note**: You can also add new parameters with `+` sign.
 
 ```bash
-python classifier/train.py +model.new_param="owo"
+python train.py +model.new_param="owo"
 ```
 
 </details>
 
 <details>
-<summary><b>Train on CPU, GPU, multi-GPU and TPU</b></summary>
+<summary><b>Train on CPU, GPU</b></summary>
 
 ```bash
 # train on CPU
@@ -66,15 +68,15 @@ python classifier/train.py trainer=cpu
 
 # train on 1 GPU
 python classifier/train.py trainer=gpu
+
+```
 </details>
 
 <details>
 <summary><b>Train model with chosen experiment config</b></summary>
 
 ```bash
-python train.py experiment=example
+python classifier/train.py experiments=example
 ```
-
-> **Note**: Experiment configs are placed in [configs/experiment/](configs/experiment/).
-
+> **Note**: Experiment configs are placed in [configs/experiments/](configs/experiments/).
 </details>
