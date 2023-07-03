@@ -36,17 +36,33 @@ pip install -r requirements.txt
 
 Template contains example with cat vs Dog  classification.
 When running python classifier/train.py you should see something like this:
-## How to run
- - Install dependencies
-### clone project
-- git clone https://github.com/minakshimathpal/The-School-of-AI.git
-- cd The-School-of-AI
+<div align="center">
 
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/terminal.png)
 
+## ⚡  Your Superpowers
 
-### install requirements
-pip install -r requirements.txt
+<details>
+<summary><b>Override any config parameter from command line</b></summary>
 
-## Train model with default configuration
-## train on CPU
-python emloCarVsDog/train.py trainer=cpu
+```bash
+python classifier/train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
+```
+
+> **Note**: You can also add new parameters with `+` sign.
+
+```bash
+python classifier/train.py +model.new_param="owo"
+```
+
+</details>
+
+<details>
+<summary><b>Train on CPU, GPU, multi-GPU and TPU</b></summary>
+
+```bash
+# train on CPU
+python classifier/train.py trainer=cpu
+
+# train on 1 GPU
+python classifier/train.py trainer=gpu
