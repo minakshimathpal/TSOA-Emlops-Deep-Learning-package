@@ -33,6 +33,9 @@ conda activate myenv
 # install requirements
 pip install -r requirements.txt
 ```
+
+Template contains example with cat vs Dog  classification.
+When running python classifier/train.py you should see something like this:
 ## How to run
  - Install dependencies
 ### clone project
