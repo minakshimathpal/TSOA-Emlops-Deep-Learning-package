@@ -66,3 +66,15 @@ python classifier/train.py trainer=cpu
 
 # train on 1 GPU
 python classifier/train.py trainer=gpu
+</details>
+
+<details>
+<summary><b>Train model with chosen experiment config</b></summary>
+
+```bash
+python train.py experiment=example
+```
+
+> **Note**: Experiment configs are placed in [configs/experiment/](configs/experiment/).
+
+</details>
