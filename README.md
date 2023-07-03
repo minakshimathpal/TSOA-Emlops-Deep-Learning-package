@@ -80,3 +80,18 @@ python classifier/train.py experiments=example
 ```
 > **Note**: Experiment configs are placed in [configs/experiments/](configs/experiments/).
 </details>
+
+Running Experiments you would see somthing like this 
+- Training using  ```classifier/train.py experiments=cat_dog`` or ```classifier_train experiments=cat_dog``` :
+<div align="center">
+
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/artifacts/experiments.png)
+
+</div>
+
+- Evaluation using  ```classifier/eval.py experiments=cat_dog`` or ```classifier_eval experiments=cat_dog``` :
+<div align="center">
+
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/artifacts/experiment_eval.png)
+
+</div>
