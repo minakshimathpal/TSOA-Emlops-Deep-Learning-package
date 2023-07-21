@@ -10,10 +10,10 @@ classifier.egg-info/dependency_links.txt
 classifier.egg-info/entry_points.txt
 classifier.egg-info/requires.txt
 classifier.egg-info/top_level.txt
-classifier/Models/__init__.py
-classifier/Models/cifar_classifier.py
-classifier/Models/vit_module.py
+classifier/models/cifar_classifier.py
+classifier/models/vit_module.py
 classifier/utils/__init__.py
+classifier/utils/instantiators.py
 classifier/utils/pylogger.py
 classifier/utils/rich_utils.py
 classifier/utils/utils.py

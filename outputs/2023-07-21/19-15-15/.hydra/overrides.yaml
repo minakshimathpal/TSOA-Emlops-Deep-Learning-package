@@ -1,0 +1,3 @@
+- data.num_workers=16
+- logger=many_loggers
+- trainer.max_epochs=25

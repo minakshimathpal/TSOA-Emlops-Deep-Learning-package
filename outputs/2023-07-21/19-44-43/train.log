@@ -1,0 +1,29 @@
+[2023-07-21 19:44:43,802][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-07-21 19:44:43,846][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ImageFolderDataModule.__init__() missing 1 required positional argument: 'predict_dataset'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 40, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.image_folder_datamodule.ImageFolderDataModule':
+TypeError("ImageFolderDataModule.__init__() missing 1 required positional argument: 'predict_dataset'")
+full_key: data
+[2023-07-21 19:44:43,848][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/outputs/2023-07-21/19-44-43

@@ -1,0 +1,39 @@
+[2023-07-21 20:14:26,996][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-07-21 20:14:27,125][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-07-21 20:14:27,162][classifier.train][INFO] - Instantiating loggers...
+[2023-07-21 20:14:27,162][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-07-21 20:14:27,167][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-07-21 20:14:27,685][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-07-21 20:14:27,687][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/loggers/mlflow.py", line 151, in __init__
+    raise ModuleNotFoundError(str(_MLFLOW_AVAILABLE))
+ModuleNotFoundError: False
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 49, in train
+    logger: List[Logger] = utils.instantiate_loggers(cfg.get("logger"))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/instantiators.py", line 48, in instantiate_loggers
+    logger.append(hydra.utils.instantiate(lg_conf))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'lightning.pytorch.loggers.mlflow.MLFlowLogger':
+ModuleNotFoundError('False')
+full_key: logger.mlflow
+[2023-07-21 20:14:27,689][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/outputs/2023-07-21/20-14-26

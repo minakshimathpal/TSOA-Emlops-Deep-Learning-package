@@ -5,9 +5,9 @@ train_dataset:
 test_dataset:
   _target_: torchvision.datasets.ImageFolder
   root: ${paths.data_dir}/PetImages_split/test
-predict_dataset:
-  _target_: torchvision.datasets.ImageFolder
-  root: ${paths.data_dir}/PetImages_split/test 
+# predict_dataset:
+#   _target_: torchvision.datasets.ImageFolder
+#   root: ${paths.data_dir}/PetImages_split/test 
 
 batch_size: 64
 num_workers: 0

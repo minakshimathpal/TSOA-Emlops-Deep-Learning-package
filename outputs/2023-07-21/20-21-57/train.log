@@ -1,0 +1,16 @@
+[2023-07-21 20:21:57,709][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-07-21 20:21:57,806][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-07-21 20:21:57,837][classifier.train][INFO] - Instantiating loggers...
+[2023-07-21 20:21:57,837][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-07-21 20:21:57,840][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-07-21 20:21:58,235][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-07-21 20:21:58,237][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-07-21 20:21:58,239][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-07-21 20:21:58,510][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-07-21 20:21:58,510][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-07-21 20:21:58,510][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-07-21 20:21:58,510][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-07-21 20:21:58,511][classifier.train][INFO] - Starting training!
+[2023-07-21 20:21:59,658][aim.sdk.reporter][INFO] - creating RunStatusReporter for 9465b2cbb61a426c9349dd96
+[2023-07-21 20:21:59,659][aim.sdk.reporter][INFO] - starting from: {}
+[2023-07-21 20:21:59,659][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7faee00c0510>

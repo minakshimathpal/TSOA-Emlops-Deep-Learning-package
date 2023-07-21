@@ -1,0 +1,6 @@
+artifact_location: /workspace/TSOA-Emlops-Deep-Learning-package/logs/mlflow/mlruns/396406986968705142
+creation_time: 1689970919737
+experiment_id: '396406986968705142'
+last_update_time: 1689970919737
+lifecycle_stage: active
+name: lightning_logs

@@ -8,11 +8,11 @@ defaults:
   - model: vit.yaml
   - paths: default.yaml
   - trainer: default.yaml
-  - hydra: default.yaml
+  - logger: many_loggers.yaml
 
   # experiment configs allow for version control of specific hyperparameters
   # e.g. best hyperparameters for given model and datamodule
-  - experiments: null
+  - experiment: null
 
 # task name, determines output directory path
 task_name: "train"
@@ -28,7 +28,7 @@ test: True
 compile: False
 
 # simply provide checkpoint path to resume training
-train_dataset:ckpt_path: 
+ckpt_path: 
 
 # seed for random number generators in pytorch, numpy and python.random
 seed: null

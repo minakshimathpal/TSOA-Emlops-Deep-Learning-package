@@ -33,3 +33,4 @@ pytest          # tests
 black
 # sh            # for running bash commands in some tests (linux/macos only)
 dvc==3.0.0
+aim
