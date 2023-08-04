@@ -711,3 +711,79 @@ omegaconf.errors.ConfigKeyError: Key 'datamodule' is not in struct
 [2023-07-22 20:16:19,753][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-07-22_20-15-08/checkpoints/epoch_004.ckpt
 [2023-07-22 20:16:19,754][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-07-22_20-15-08
 [2023-07-22 20:16:19,755][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2023-08-04 20:03:35,125][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-08-04 20:03:35,243][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-04 20:03:35,281][classifier.train][INFO] - Instantiating loggers...
+[2023-08-04 20:03:35,297][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-04 20:03:35,300][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-04 20:03:35,826][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-04 20:03:35,826][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-04 20:03:35,826][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-04 20:03:35,826][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-04 20:03:35,826][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-04 20:03:36,005][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-04 20:03:36,006][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/loggers/mlflow.py", line 151, in __init__
+    raise ModuleNotFoundError(str(_MLFLOW_AVAILABLE))
+ModuleNotFoundError: False
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 49, in train
+    logger: List[Logger] = utils.instantiate_loggers(cfg.get("logger"))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/instantiators.py", line 48, in instantiate_loggers
+    logger.append(hydra.utils.instantiate(lg_conf))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'lightning.pytorch.loggers.mlflow.MLFlowLogger':
+ModuleNotFoundError('False')
+full_key: logger.mlflow
+[2023-08-04 20:03:36,008][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-04_20-03-35
+[2023-08-04 20:04:43,054][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-08-04 20:04:43,158][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-04 20:04:43,204][classifier.train][INFO] - Instantiating loggers...
+[2023-08-04 20:04:43,204][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-04 20:04:43,208][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-04 20:04:44,022][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-04 20:04:44,026][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-04 20:04:44,028][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-04 20:04:44,028][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-04 20:04:44,031][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-04 20:04:44,032][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-04 20:04:44,033][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-04 20:04:44,164][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-04 20:04:44,187][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-04 20:04:44,187][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-04 20:04:44,187][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-04 20:04:44,188][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-04 20:04:44,188][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-04 20:04:44,235][aim.sdk.reporter][INFO] - creating RunStatusReporter for 6fd92617f2d14176b69788f9
+[2023-08-04 20:04:44,236][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-04 20:04:44,236][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7feb1db17410>
+[2023-08-04 20:04:44,453][classifier.train][INFO] - Starting training!
+[2023-08-04 20:09:18,070][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=2` reached.
+[2023-08-04 20:09:18,166][classifier.train][INFO] - Starting testing!
+[2023-08-04 20:09:18,197][aim.sdk.reporter][INFO] - creating RunStatusReporter for 6fd92617f2d14176b69788f9
+[2023-08-04 20:09:18,198][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-04 20:09:18,198][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7feb1bf249d0>
+[2023-08-04 20:09:18,221][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-04_20-04-42/checkpoints/epoch_001.ckpt
+[2023-08-04 20:09:18,362][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-04_20-04-42/checkpoints/epoch_001.ckpt
+[2023-08-04 20:09:31,271][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-04_20-04-42/checkpoints/epoch_001.ckpt
+[2023-08-04 20:09:31,272][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-04_20-04-42
+[2023-08-04 20:09:31,273][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...

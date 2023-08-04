@@ -14,6 +14,7 @@ classifier/models/cifar_classifier.py
 classifier/models/vit_module.py
 classifier/utils/__init__.py
 classifier/utils/instantiators.py
+classifier/utils/logging_utils.py
 classifier/utils/pylogger.py
 classifier/utils/rich_utils.py
 classifier/utils/utils.py

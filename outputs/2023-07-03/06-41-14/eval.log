@@ -1,7 +1,0 @@
-[2023-07-03 06:41:14,669][classifier.eval][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
-[2023-07-03 06:41:14,791][classifier.eval][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
-[2023-07-03 06:41:14,824][classifier.eval][INFO] - Instantiating loggers...
-[2023-07-03 06:41:14,825][classifier.utils.instantiators][WARNING] - No logger configs found! Skipping...
-[2023-07-03 06:41:14,825][classifier.eval][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
-[2023-07-03 06:41:14,908][classifier.eval][INFO] - Starting testing!
-[2023-07-03 06:41:34,015][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/outputs/2023-07-03/06-41-14
