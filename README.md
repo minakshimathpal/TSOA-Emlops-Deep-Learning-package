@@ -13,8 +13,14 @@ Pytorch Image Models - PyTorch Image Models (timm) is a collection of image mode
 
 1. Supports [Pytorch Custom Models](https://pytorch.org/vision/stable/models.html), [Huggingface Models](https://huggingface.co/models) and [Timm Models](https://github.com/huggingface/pytorch-image-models).
 2. Model Training and Evaluation using [Pytorch Lightning Framework](https://lightning.ai/).
+3. [Docker Container Based Model Training and Evaluation](https://github.com/u6yuvi/dl-package/tree/main#using-docker-containers)
 3. Experiments Configuration using [Hydra Template](https://hydra.cc/).
-4. Data Versioning using Data Version Control
+4. Experiment Logging using:
+    1. [Tensorboard](https://www.tensorflow.org/tensorboard/get_started).
+    2. [Mlflow](https://github.com/mlflow/mlflow/)
+    3. [Aim](https://github.com/aimhubio/aim)
+5. Data Versioning using Data Version Control
+
 
 ## 🚀  Quickstart
 
