@@ -106,7 +106,8 @@ python classifier/train.py trainer=gpu
 
 An eval.py script is provided to load a model from a saved checkpoint and run it on a validation dataset. The script prints test metrics for convenient analysis.
 ```bash
-python classifier/eval.py```
+python classifier/eval.py
+```
 
 <details>
 <summary><b>Train model with chosen experiment config</b></summary>
