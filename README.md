@@ -72,6 +72,20 @@ When running ```python classifier/train.py``` or ```classifier_train``` you shou
 
 </div>
 
+## How to run using Docker
+
+```bash
+# Build Docker on local
+docker build -t emlov3-pytorchlightning-hydra .
+
+# Since checkpoint will not be persisted between container runs if train and eval are run separately, use below command to run together. 
+docker run emlov3-pytorchlightning-hydra sh -c "python3 ninja/train.py && python3 ninja/eval.py"
+
+# Using volume you can mount checkpoint to host directory and run train and eval separately.
+docker run --rm -t -v ${pwd}/ckpt:/workspace/ckpt emlov3-pytorchlightning-hydra python classifier/train.py
+docker run --rm -t -v ${pwd}/ckpt:/workspace/ckpt emlov3-pytorchlightning-hydra python classifier/eval.py
+```
+
 ## ⚡  Your Superpowers
 
 <details>
@@ -171,9 +185,32 @@ dvc push data outputs
 
 #Pull data from remote directory
 dvc pull
+
+# To switch between versions of code and data run
+git checkout master
+dvc checkout
+```
+
+## Run Multi-Run Experiments using Hydra 
+### Without Docker Container
+1. Run experiment
+```
+classifier_train -m hydra/launcher=joblib hydra.launcher.n_jobs=4 experiment=cifar_vit model.net.patch_size=1,2,4,8,16 data.num_workers=4
+```
+#experiment logs are saved under logs/ folder.
+
+2. Run AIM UI
+```
+aim up
+```
+3. Run Tensorboard
+```
+tensorboard --logdir=logs/tensorboard
+```
+4. Run MLFlow
+```
+mlflow ui
 ```
 ## Maintainers
   1. Minakshi Mathpal
-  2. Jyotish Chandrasenan
-  3. Sridhar Baskaran
-  4. Ebin
+  
