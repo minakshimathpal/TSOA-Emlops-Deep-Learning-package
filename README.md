@@ -118,21 +118,25 @@ To Run Experiments using Hydra
 
 ```bash
 If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
-classifier_train experiment=cat_dog
+# If package is install with setup.py in dev mode use following
+classifier_train experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
+
+# If packages are installed with requirements file then use
+python classifier/train.py experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 
 If "experiment:null" not added in train.yaml.Override the train.yaml using
-classifier_train +experiment=cat_dog
+classifier_train +experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
+or
+python classifier/train.py +experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 ```    
 3. Run Evaluation using experiment config
-```
+```bash
 classifier_eval experiment=cat_dog
 ```
-![](images/eval.png)
-
 4. Run Prediction using experiment config
-```
+```bash
 Load an image from data/predict/test
-classifier_predict experiment=cat_dog
+classifier_predict experiment=cat_dog_infer test_path=data/PetImages_split/test/Cat/15.jpg 
 ```
 ![](images/predict.png)
 
