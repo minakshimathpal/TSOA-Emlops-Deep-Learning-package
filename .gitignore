@@ -155,3 +155,4 @@ configs/local/default.yaml
 .aim
 temp
 /data
+/logs
