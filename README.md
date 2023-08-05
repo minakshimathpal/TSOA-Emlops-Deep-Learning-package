@@ -86,7 +86,6 @@ python classifier/train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
 ```bash
 python train.py +model.new_param="owo"
 ```
-
 </details>
 
 <details>
@@ -106,8 +105,8 @@ python classifier/train.py trainer=gpu
 <summary><b>Train model with chosen experiment config</b></summary>
 
 To Run Experiments using Hydra
-    1) Create an experiment hydra file overiding train.yaml file
-    2) Run training and evaluation with experiment config
+1. Create an experiment hydra file overiding train.yaml file
+2. Run training and evaluation with experiment config
 
 ```bash
 If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
@@ -116,6 +115,18 @@ classifier_train experiment=cat_dog
 If "experiment:null" not added in train.yaml.Override the train.yaml using
 classifier_train +experiment=cat_dog
 ```    
+3. Run Evaluation using experiment config
+```
+classifier_eval experiment=cat_dog
+```
+![](images/eval.png)
+
+4. Run Prediction using experiment config
+```
+Load an image from data/predict/test
+classifier_predict experiment=cat_dog
+```
+![](images/predict.png)
 
 ```bash
 python classifier/train.py experiments=example
