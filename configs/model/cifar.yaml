@@ -1,4 +1,4 @@
-_target_ : emloCarVsDog.model.cifar_classifier.TimmLitModule
+_target_ : classifier.models.cifar_classifier.TimmLitModule
 
 optimizer:
   _target_: torch.optim.Adam
@@ -15,6 +15,6 @@ scheduler:
 
 net:
   _target_: timm.create_model
-  model_name: 'resnet34',
+  model_name: 'resnet34'
   pretrained: True
   num_classes: 10

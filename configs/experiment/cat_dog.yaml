@@ -19,6 +19,15 @@ trainer:
   gradient_clip_val: 0.5
 
 model:
+  net:
+    _target_: classifier.models.vit_module.ViT
+    in_channels : 3
+    patch_size : 4
+    emb_size : 64
+    img_size : 32
+    depth : 6
+    #num_classes : 2
+
   num_classes: 2
   topk: 2
 
@@ -30,3 +39,7 @@ data:
   image_size: 32
 
 compile: False
+
+ckpt_dir: ${hydra:runtime.cwd}/logs/
+ckpt_file: train/runs/2023-08-05_19-27-47/checkpoints/last.ckpt # 2023-06-23/21-03-48/checkpoints/last.ckpt           
+test_ckpt_path: ${ckpt_dir}/${ckpt_file}

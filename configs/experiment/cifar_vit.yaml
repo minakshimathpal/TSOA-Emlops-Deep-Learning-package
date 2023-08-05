@@ -1,0 +1,45 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=cat_dog
+
+defaults:
+  - override /data: cifar.yaml
+  - override /model: vit.yaml
+  - override /trainer: default.yaml
+  - override /logger: many_loggers.yaml
+  - override /callbacks: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+experiment_name: "cifar10vit-patch-size-check"
+
+model:
+  num_classes: 10
+  topk: 4
+  net:
+    patch_size : 2
+tags:
+  cifar10vit: "patch-size-check"
+
+seed: 12345
+
+trainer:
+  min_epochs: 0
+  max_epochs: 2
+  gradient_clip_val: 0.5
+
+# data:
+  # num_workers: 4
+
+compile: False
+
+logger:
+  mlflow:
+    tags: ${tags}
+    experiment_name: ${experiment_name}
+  aim:
+    experiment: ${experiment_name}
+  tensorboard:
+    name: ${experiment_name}

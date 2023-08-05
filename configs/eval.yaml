@@ -8,7 +8,7 @@ defaults:
   - model: cifar.yaml
   - paths: default.yaml
   - trainer: default.yaml
-  - experiments: null
+  - experiment: null
 
 
 # task name, determines output directory path

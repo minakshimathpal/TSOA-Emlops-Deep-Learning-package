@@ -921,3 +921,1036 @@ Traceback (most recent call last):
     raise UnidentifiedImageError(msg)
 PIL.UnidentifiedImageError: cannot identify image file <_io.BufferedReader name='./data//PetImages_split/train/Dog/11702.jpg'>
 [2023-08-05 07:46:01,237][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_07-45-15
+[2023-08-05 18:44:30,602][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-08-05 18:44:30,689][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 18:44:30,730][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 18:44:30,730][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 18:44:30,733][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 18:44:30,960][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-05 18:44:30,960][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-05 18:44:30,961][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-05 18:44:30,961][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-05 18:44:30,961][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-05 18:44:31,311][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 18:44:31,313][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 18:44:31,314][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 18:44:31,314][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 18:44:31,316][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 18:44:31,317][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 18:44:31,318][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 18:44:31,388][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 18:44:31,415][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 18:44:31,416][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 18:44:31,416][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 18:44:31,416][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 18:44:31,416][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 18:44:31,464][aim.sdk.reporter][INFO] - creating RunStatusReporter for 5f4d4634cc2c49e8ada87519
+[2023-08-05 18:44:31,465][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 18:44:31,465][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f09aff16510>
+[2023-08-05 18:44:31,624][classifier.train][INFO] - Starting training!
+[2023-08-05 18:48:10,057][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=2` reached.
+[2023-08-05 18:48:10,158][classifier.train][INFO] - Starting testing!
+[2023-08-05 18:48:10,186][aim.sdk.reporter][INFO] - creating RunStatusReporter for 5f4d4634cc2c49e8ada87519
+[2023-08-05 18:48:10,186][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 18:48:10,187][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f09a8d25a10>
+[2023-08-05 18:48:10,209][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_18-44-30/checkpoints/epoch_001.ckpt
+[2023-08-05 18:48:10,336][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_18-44-30/checkpoints/epoch_001.ckpt
+[2023-08-05 18:48:22,055][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_18-44-30/checkpoints/epoch_001.ckpt
+[2023-08-05 18:48:22,056][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_18-44-30
+[2023-08-05 18:48:22,056][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2023-08-05 19:27:47,796][classifier.train][INFO] - Instantiating datamodule <classifier.data.image_folder_datamodule.ImageFolderDataModule>
+[2023-08-05 19:27:47,899][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 19:27:47,930][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 19:27:47,930][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 19:27:47,933][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 19:27:48,741][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 19:27:48,744][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 19:27:48,745][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 19:27:48,745][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 19:27:48,748][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 19:27:48,748][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 19:27:48,749][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 19:27:48,827][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 19:27:48,846][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 19:27:48,846][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 19:27:48,846][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 19:27:48,846][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 19:27:48,847][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 19:27:48,888][aim.sdk.reporter][INFO] - creating RunStatusReporter for 1cd06460fba04dd298d3ada3
+[2023-08-05 19:27:48,889][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 19:27:48,889][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fd01d71eb90>
+[2023-08-05 19:27:49,058][classifier.train][INFO] - Starting training!
+[2023-08-05 19:30:39,789][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=1` reached.
+[2023-08-05 19:30:39,852][classifier.train][INFO] - Starting testing!
+[2023-08-05 19:30:39,884][aim.sdk.reporter][INFO] - creating RunStatusReporter for 1cd06460fba04dd298d3ada3
+[2023-08-05 19:30:39,885][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 19:30:39,885][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fd0145bbf10>
+[2023-08-05 19:30:39,911][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_19-27-47/checkpoints/epoch_000.ckpt
+[2023-08-05 19:30:40,132][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_19-27-47/checkpoints/epoch_000.ckpt
+[2023-08-05 19:31:00,349][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_19-27-47/checkpoints/epoch_000.ckpt
+[2023-08-05 19:31:00,350][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/runs/2023-08-05_19-27-47
+[2023-08-05 19:31:00,351][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2023-08-05 21:07:08,001][classifier.train][INFO] - Instantiating datamodule <emloCarVsDog.data.cifar_datamodule.CIFARDataModule>
+[2023-08-05 21:07:08,001][classifier.train][INFO] - Instantiating datamodule <emloCarVsDog.data.cifar_datamodule.CIFARDataModule>
+[2023-08-05 21:07:08,003][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 635, in _locate
+    obj = import_module(part0)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'emloCarVsDog'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 637, in _locate
+    raise ImportError(
+ImportError: Error loading 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule':
+ModuleNotFoundError("No module named 'emloCarVsDog'")
+Are you sure that module 'emloCarVsDog' is installed?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-05 21:07:08,003][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 635, in _locate
+    obj = import_module(part0)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'emloCarVsDog'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 637, in _locate
+    raise ImportError(
+ImportError: Error loading 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule':
+ModuleNotFoundError("No module named 'emloCarVsDog'")
+Are you sure that module 'emloCarVsDog' is installed?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-05 21:07:08,006][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-07-00/0
+[2023-08-05 21:07:08,006][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-07-00/3
+[2023-08-05 21:07:08,022][classifier.train][INFO] - Instantiating datamodule <emloCarVsDog.data.cifar_datamodule.CIFARDataModule>
+[2023-08-05 21:07:08,022][classifier.train][INFO] - Instantiating datamodule <emloCarVsDog.data.cifar_datamodule.CIFARDataModule>
+[2023-08-05 21:07:08,024][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 635, in _locate
+    obj = import_module(part0)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'emloCarVsDog'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 637, in _locate
+    raise ImportError(
+ImportError: Error loading 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule':
+ModuleNotFoundError("No module named 'emloCarVsDog'")
+Are you sure that module 'emloCarVsDog' is installed?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-05 21:07:08,024][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 635, in _locate
+    obj = import_module(part0)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'emloCarVsDog'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 637, in _locate
+    raise ImportError(
+ImportError: Error loading 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule':
+ModuleNotFoundError("No module named 'emloCarVsDog'")
+Are you sure that module 'emloCarVsDog' is installed?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-05 21:07:08,026][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-07-00/1
+[2023-08-05 21:07:08,027][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-07-00/2
+[2023-08-05 21:07:08,400][classifier.train][INFO] - Instantiating datamodule <emloCarVsDog.data.cifar_datamodule.CIFARDataModule>
+[2023-08-05 21:07:08,401][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 635, in _locate
+    obj = import_module(part0)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'emloCarVsDog'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 637, in _locate
+    raise ImportError(
+ImportError: Error loading 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule':
+ModuleNotFoundError("No module named 'emloCarVsDog'")
+Are you sure that module 'emloCarVsDog' is installed?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'emloCarVsDog.data.cifar_datamodule.CIFARDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-05 21:07:08,403][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-07-00/4
+[2023-08-05 21:10:31,107][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:10:31,110][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:10:31,114][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-10-24/1
+[2023-08-05 21:10:31,149][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:10:31,151][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:10:31,153][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-10-24/2
+[2023-08-05 21:10:31,155][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:10:31,157][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:10:31,159][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-10-24/0
+[2023-08-05 21:10:31,165][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:10:31,168][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:10:31,170][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-10-24/3
+[2023-08-05 21:10:31,490][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:10:31,492][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:10:31,493][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-10-24/4
+[2023-08-05 21:11:57,558][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:11:57,558][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:11:57,560][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:11:57,560][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:11:57,562][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-11-47/1
+[2023-08-05 21:11:57,562][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-11-47/2
+[2023-08-05 21:11:57,652][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:11:57,655][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:11:57,657][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-11-47/3
+[2023-08-05 21:11:57,678][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:11:57,680][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:11:57,682][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-11-47/0
+[2023-08-05 21:11:57,954][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:11:57,956][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:11:57,957][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-11-47/4
+[2023-08-05 21:12:32,685][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:12:32,688][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:12:32,690][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-12-24/2
+[2023-08-05 21:12:32,694][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:12:32,697][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:12:32,699][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-12-24/1
+[2023-08-05 21:12:32,793][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:12:32,796][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:12:32,798][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-12-24/0
+[2023-08-05 21:12:32,937][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:12:32,940][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:12:32,942][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-12-24/3
+[2023-08-05 21:12:33,189][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:12:33,192][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.cifar10_datamodule.CIFARDataModule':
+TypeError("CIFARDataModule.__init__() got an unexpected keyword argument 'num_workers'")
+full_key: data
+[2023-08-05 21:12:33,194][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-12-24/4
+[2023-08-05 21:14:07,412][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 42, in train
+    log.info(f"Instantiating datamodule <{cfg.data._target_}>")
+                                          ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_target_'
+[2023-08-05 21:14:07,414][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-14-00/1
+[2023-08-05 21:14:07,464][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 42, in train
+    log.info(f"Instantiating datamodule <{cfg.data._target_}>")
+                                          ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_target_'
+[2023-08-05 21:14:07,465][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-14-00/2
+[2023-08-05 21:14:07,540][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 42, in train
+    log.info(f"Instantiating datamodule <{cfg.data._target_}>")
+                                          ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_target_'
+[2023-08-05 21:14:07,541][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 42, in train
+    log.info(f"Instantiating datamodule <{cfg.data._target_}>")
+                                          ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_target_'
+[2023-08-05 21:14:07,542][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-14-00/0
+[2023-08-05 21:14:07,543][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-14-00/3
+[2023-08-05 21:14:07,788][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 42, in train
+    log.info(f"Instantiating datamodule <{cfg.data._target_}>")
+                                          ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_target_'
+[2023-08-05 21:14:07,789][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-14-00/4
+[2023-08-05 21:15:43,500][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:15:43,503][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 21:15:43,515][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:15:43,518][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 21:15:43,530][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 21:15:43,530][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 21:15:43,533][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 21:15:43,536][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:15:43,539][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 21:15:43,547][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 21:15:43,547][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 21:15:43,550][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 21:15:43,566][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 21:15:43,566][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 21:15:43,570][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 21:15:43,580][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:15:43,582][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 21:15:43,611][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 21:15:43,611][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 21:15:43,615][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 21:15:44,080][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 21:15:44,083][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 21:15:44,084][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 21:15:44,085][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 21:15:44,086][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 21:15:44,088][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 21:15:44,088][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 21:15:44,089][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 21:15:44,090][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 21:15:44,090][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 21:15:44,112][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 21:15:44,115][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 21:15:44,116][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 21:15:44,117][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 21:15:44,119][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 21:15:44,121][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 21:15:44,123][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 21:15:44,123][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 21:15:44,126][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 21:15:44,126][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 21:15:44,127][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 21:15:44,129][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 21:15:44,132][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 21:15:44,134][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 21:15:44,134][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 21:15:44,136][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 21:15:44,137][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 21:15:44,137][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 21:15:44,213][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 21:15:44,215][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 21:15:44,232][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 21:15:44,234][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 21:15:44,234][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 21:15:44,234][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 21:15:44,234][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 21:15:44,235][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 21:15:44,235][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 21:15:44,235][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 21:15:44,235][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 21:15:44,235][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 21:15:44,236][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 21:15:44,238][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 21:15:44,251][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 21:15:44,252][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 21:15:44,252][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 21:15:44,252][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 21:15:44,252][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 21:15:44,257][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 21:15:44,257][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 21:15:44,257][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 21:15:44,257][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 21:15:44,258][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 21:15:44,277][aim.sdk.reporter][INFO] - creating RunStatusReporter for 6ad8b93951094e84b4a9aa3a
+[2023-08-05 21:15:44,277][aim.sdk.reporter][INFO] - creating RunStatusReporter for 0cfbd01f8e5843ee8f8d34a4
+[2023-08-05 21:15:44,279][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 21:15:44,279][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 21:15:44,279][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fd934151b90>
+[2023-08-05 21:15:44,279][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f46a5f223d0>
+[2023-08-05 21:15:44,281][aim.sdk.reporter][INFO] - creating RunStatusReporter for 7a7501fa0eb6498793c0e8df
+[2023-08-05 21:15:44,282][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 21:15:44,282][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f3597180690>
+[2023-08-05 21:15:44,287][aim.sdk.reporter][INFO] - creating RunStatusReporter for 7b791d091d9b4e53ad97b043
+[2023-08-05 21:15:44,288][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 21:15:44,288][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f09bdd0d890>
+[2023-08-05 21:15:44,480][classifier.train][INFO] - Starting training!
+[2023-08-05 21:15:44,516][classifier.train][INFO] - Starting training!
+[2023-08-05 21:15:44,577][classifier.train][INFO] - Starting training!
+[2023-08-05 21:15:44,577][classifier.train][INFO] - Starting training!
+[2023-08-05 21:15:53,773][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 68, in __init__
+    raise RuntimeError("Dataset not found or corrupted. You can use download=True to download it")
+RuntimeError: Dataset not found or corrupted. You can use download=True to download it
+[2023-08-05 21:15:53,778][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-15-34/2
+[2023-08-05 21:15:54,419][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-05 21:15:54,422][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-05 21:15:54,443][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 82, in __init__
+    entry = pickle.load(f, encoding="latin1")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: pickle data was truncated
+[2023-08-05 21:15:54,446][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-15-34/0
+[2023-08-05 21:15:54,460][classifier.train][INFO] - Instantiating loggers...
+[2023-08-05 21:15:54,460][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-05 21:15:54,462][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-05 21:15:54,464][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-05 21:15:54,467][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-05 21:15:54,470][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-05 21:15:54,470][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-05 21:15:54,515][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-05 21:15:54,516][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-05 21:15:54,517][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-05 21:15:54,525][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-05 21:15:54,550][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-05 21:15:54,551][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-05 21:15:54,551][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-05 21:15:54,551][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-05 21:15:54,551][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-05 21:15:54,622][aim.sdk.reporter][INFO] - creating RunStatusReporter for 25ef8efc865f47a690b5f4ba
+[2023-08-05 21:15:54,623][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-05 21:15:54,623][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f46a1993550>
+[2023-08-05 21:15:54,769][classifier.train][INFO] - Starting training!
+[2023-08-05 21:15:55,264][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 82, in __init__
+    entry = pickle.load(f, encoding="latin1")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: pickle data was truncated
+[2023-08-05 21:15:55,266][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-15-34/1
+[2023-08-05 21:15:56,339][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 68, in __init__
+    raise RuntimeError("Dataset not found or corrupted. You can use download=True to download it")
+RuntimeError: Dataset not found or corrupted. You can use download=True to download it
+[2023-08-05 21:15:56,341][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-15-34/3
+[2023-08-05 21:15:59,230][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 88, in setup
+    self.data_train,self.data_val,self.data_test = random_split(dataset=dataset,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-05 21:15:59,233][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-15-34/4

@@ -3,12 +3,12 @@
 # specify here default configuration
 # order of defaults determines the order in which configs override each other
 defaults:
-  - _self_
-  - data: image_folder.yaml
+  - _self_  
   - model: vit.yaml
   - paths: default.yaml
-  - trainer: default.yaml
-  - experiments: null
+  # experiment configs allow to config any model hyperparams while inference
+  # e.g. image size or num classes
+  - experiment: null
 
 # task name, determines output directory path
 task_name: "predict"
@@ -26,7 +26,11 @@ predict: True
 compile: False
 
 # simply provide checkpoint path to resume training
-test_ckpt_path: null
+ckpt_dir: ${hydra:runtime.cwd}/logs/
+ckpt_file: train/runs/2023-08-05_18-44-30/checkpoints/last.ckpt # 2023-06-23/21-03-48/checkpoints/last.ckpt           
+test_ckpt_path: ${ckpt_dir}/${ckpt_file}
+
+test_path: ${paths.data_dir}/PetImages_split/test/Cat/42.jpg
 
 # seed for random number generators in pytorch, numpy and python.random
 seed: null
