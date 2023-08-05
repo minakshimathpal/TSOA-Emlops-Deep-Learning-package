@@ -117,14 +117,14 @@ To Run Experiments using Hydra
 2. Run training and evaluation with experiment config
 
 ```bash
-If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
+# If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
 # If package is install with setup.py in dev mode use following
 classifier_train experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 
 # If packages are installed with requirements file then use
 python classifier/train.py experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 
-If "experiment:null" not added in train.yaml.Override the train.yaml using
+# If "experiment:null" not added in train.yaml.Override the train.yaml using
 classifier_train +experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 or
 python classifier/train.py +experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
@@ -133,16 +133,16 @@ python classifier/train.py +experiment=cat_dog trainer.max_epochs=1 datamodule.b
 ```bash
 classifier_eval experiment=cat_dog
 ```
-4. Run Prediction using experiment config
+4. Run Prediction/prediction using experiment config
 ```bash
-Load an image from data/predict/test
-classifier_predict experiment=cat_dog_infer test_path=data/PetImages_split/test/Cat/15.jpg 
-```
-![](images/predict.png)
+# If installed in dev mode, run infer with 
+# experiment/cat_dog_infer.yaml using
+classifier_predict experiment=cat_dog_infer test_path=.data/PetImages_split/test/Cat/15.jpg
 
-```bash
-python classifier/train.py experiments=example
+# If installed using requirements.txt, use
+python classifier/infer.py experiment=cat_dog_infer test_path=./data/PetImages_split/test/Cat/15.jpg
 ```
+
 > **Note**: Experiment configs are placed in [configs/experiments/](configs/experiments/).
 </details>
 
