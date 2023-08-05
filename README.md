@@ -2,6 +2,13 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)![hydra](https://img.shields.io/badge/Config-Hydra_1.3-89b8cd)![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
+## Overview
+This project is architected to build a robust pipeline for image classification, leveraging the `CIFAR10` dataset and any accessible model from PyTorch Image Models (`TIMM`). It incorporates Docker support, offering a convenient route for reproducibility, and is equipped to conduct both training and evaluation tasks.
+
+A significant attribute of this repository is the integration of `Hydra` for sophisticated configuration composition, command-line overrides, and the instantiation of Python objects. 
+
+Furthermore, the project utilizes `PyTorch Lightning`, simplifying the training and evaluation processes and providing a high-level interface to PyTorch.
+
 ## Main Technologies
 PyTorch Lightning - a lightweight PyTorch wrapper for high-performance AI research. Think of it as a framework for organizing your PyTorch code.
 
@@ -21,8 +28,22 @@ Pytorch Image Models - PyTorch Image Models (timm) is a collection of image mode
     3. [Aim](https://github.com/aimhubio/aim)
 5. Data Versioning using Data Version Control
 
+## Dataset
+
+The project utilizes the CIFAR10 dataset for image classification tasks. Refer to the [PyTorch CIFAR10 tutorial](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html) for a detailed guide on how the dataset is incorporated into the project.
+
+## Model
+
+The project supports any image classification model available in TIMM. Models can be specified in the configuration files and are loaded during runtime.
+
 
 ## 🚀  Quickstart
+
+### How to run on local
+
+### Installation
+
+#### Pip
 
 ```bash
 # clone project
@@ -39,6 +60,9 @@ conda activate myenv
 # install requirements
 pip install -r requirements.txt
 ```
+Train model with default/cpu configuration:
+
+To train a model, adjust the settings in the provided configuration files and run the training script. The model's checkpoints will be saved at specified intervals, containing all necessary information to resume training or perform evaluations.
 
 Template contains example with cat vs Dog  classification.
 When running ```python classifier/train.py``` or ```classifier_train``` you should see something like this:
@@ -80,6 +104,18 @@ python classifier/train.py trainer=gpu
 
 <details>
 <summary><b>Train model with chosen experiment config</b></summary>
+
+To Run Experiments using Hydra
+    1) Create an experiment hydra file overiding train.yaml file
+    2) Run training and evaluation with experiment config
+
+```bash
+If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
+classifier_train experiment=cat_dog
+
+If "experiment:null" not added in train.yaml.Override the train.yaml using
+classifier_train +experiment=cat_dog
+```    
 
 ```bash
 python classifier/train.py experiments=example
