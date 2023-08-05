@@ -94,12 +94,19 @@ python train.py +model.new_param="owo"
 ```bash
 # train on CPU
 python classifier/train.py trainer=cpu
+python classifier/eval.py
+
+# You can override any parameter from command line like this
+python classifier/train.py trainer.max_epochs=20 data.batch_size=64
 
 # train on 1 GPU
 python classifier/train.py trainer=gpu
-
 ```
 </details>
+
+An eval.py script is provided to load a model from a saved checkpoint and run it on a validation dataset. The script prints test metrics for convenient analysis.
+```bash
+python classifier/eval.py```
 
 <details>
 <summary><b>Train model with chosen experiment config</b></summary>
