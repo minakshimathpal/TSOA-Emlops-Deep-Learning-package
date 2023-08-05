@@ -72,6 +72,20 @@ When running ```python classifier/train.py``` or ```classifier_train``` you shou
 
 </div>
 
+## How to run using Docker
+
+```bash
+# Build Docker on local
+docker build -t emlov3-pytorchlightning-hydra .
+
+# Since checkpoint will not be persisted between container runs if train and eval are run separately, use below command to run together. 
+docker run emlov3-pytorchlightning-hydra sh -c "python3 ninja/train.py && python3 ninja/eval.py"
+
+# Using volume you can mount checkpoint to host directory and run train and eval separately.
+docker run --rm -t -v ${pwd}/ckpt:/workspace/ckpt emlov3-pytorchlightning-hydra python classifier/train.py
+docker run --rm -t -v ${pwd}/ckpt:/workspace/ckpt emlov3-pytorchlightning-hydra python classifier/eval.py
+```
+
 ## ⚡  Your Superpowers
 
 <details>
@@ -86,7 +100,6 @@ python classifier/train.py trainer.max_epochs=20 model.optimizer.lr=1e-4
 ```bash
 python train.py +model.new_param="owo"
 ```
-
 </details>
 
 <details>
@@ -95,31 +108,55 @@ python train.py +model.new_param="owo"
 ```bash
 # train on CPU
 python classifier/train.py trainer=cpu
+python classifier/eval.py
+
+# You can override any parameter from command line like this
+python classifier/train.py trainer.max_epochs=20 data.batch_size=64
 
 # train on 1 GPU
 python classifier/train.py trainer=gpu
-
 ```
 </details>
+
+An eval.py script is provided to load a model from a saved checkpoint and run it on a validation dataset. The script prints test metrics for convenient analysis.
+```bash
+python classifier/eval.py
+```
 
 <details>
 <summary><b>Train model with chosen experiment config</b></summary>
 
 To Run Experiments using Hydra
-    1) Create an experiment hydra file overiding train.yaml file
-    2) Run training and evaluation with experiment config
+1. Create an experiment hydra file overiding train.yaml file
+2. Run training and evaluation with experiment config
 
 ```bash
-If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
-classifier_train experiment=cat_dog
+# If "experiment : null added in the train.yaml, the respective experiment.yaml(for eg cat_dog here) will overide the configuration
+# If package is install with setup.py in dev mode use following
+classifier_train experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 
-If "experiment:null" not added in train.yaml.Override the train.yaml using
-classifier_train +experiment=cat_dog
+# If packages are installed with requirements file then use
+python classifier/train.py experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
+
+# If "experiment:null" not added in train.yaml.Override the train.yaml using
+classifier_train +experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
+or
+python classifier/train.py +experiment=cat_dog trainer.max_epochs=1 datamodule.batch_size=64
 ```    
-
+3. Run Evaluation using experiment config
 ```bash
-python classifier/train.py experiments=example
+classifier_eval experiment=cat_dog
 ```
+4. Run Prediction/prediction using experiment config
+```bash
+# If installed in dev mode, run infer with 
+# experiment/cat_dog_infer.yaml using
+classifier_predict experiment=cat_dog_infer test_path=.data/PetImages_split/test/Cat/15.jpg
+
+# If installed using requirements.txt, use
+python classifier/infer.py experiment=cat_dog_infer test_path=./data/PetImages_split/test/Cat/15.jpg
+```
+
 > **Note**: Experiment configs are placed in [configs/experiments/](configs/experiments/).
 </details>
 
@@ -148,9 +185,32 @@ dvc push data outputs
 
 #Pull data from remote directory
 dvc pull
+
+# To switch between versions of code and data run
+git checkout master
+dvc checkout
+```
+
+## Run Multi-Run Experiments using Hydra 
+### Without Docker Container
+1. Run experiment
+```
+classifier_train -m hydra/launcher=joblib hydra.launcher.n_jobs=4 experiment=cifar_vit model.net.patch_size=1,2,4,8,16 data.num_workers=4
+```
+#experiment logs are saved under logs/ folder.
+
+2. Run AIM UI
+```
+aim up
+```
+3. Run Tensorboard
+```
+tensorboard --logdir=logs/tensorboard
+```
+4. Run MLFlow
+```
+mlflow ui
 ```
 ## Maintainers
   1. Minakshi Mathpal
-  2. Jyotish Chandrasenan
-  3. Sridhar Baskaran
-  4. Ebin
+  
