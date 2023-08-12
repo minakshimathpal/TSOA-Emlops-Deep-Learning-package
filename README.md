@@ -26,7 +26,7 @@ Pytorch Image Models - PyTorch Image Models (timm) is a collection of image mode
     1. [Tensorboard](https://www.tensorflow.org/tensorboard/get_started).
     2. [Mlflow](https://github.com/mlflow/mlflow/)
     3. [Aim](https://github.com/aimhubio/aim)
-5. Data Versioning using Data Version Control
+5. [Data Versioning using Data Version Control](#DVC Configuration)
 6. Experiment Tracking and How to train using hydra multirun with joblib launcher
 
 ## Dataset
