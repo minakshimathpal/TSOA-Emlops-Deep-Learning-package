@@ -1954,3 +1954,667 @@ Traceback (most recent call last):
     raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
 ValueError: Sum of input lengths does not equal the length of the input dataset!
 [2023-08-05 21:15:59,233][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-05_21-15-34/4
+[2023-08-12 18:38:55,010][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:38:55,013][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:38:55,044][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:38:55,044][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:38:55,048][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:38:55,110][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:38:55,113][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:38:55,114][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:38:55,118][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:38:55,143][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:38:55,144][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:38:55,147][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:38:55,147][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:38:55,148][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:38:55,152][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:38:55,165][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:38:55,168][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:38:55,203][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:38:55,203][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:38:55,209][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:38:55,473][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,473][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,473][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,473][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-12 18:38:55,473][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-12 18:38:55,473][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,474][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,503][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,503][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-12 18:38:55,503][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-12 18:38:55,504][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-12 18:38:55,504][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-12 18:38:55,758][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:38:55,758][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:38:55,758][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:38:55,759][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:38:55,761][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:38:55,761][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:38:55,761][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:38:55,762][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:38:55,763][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:38:55,763][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:38:55,763][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:38:55,763][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:38:55,764][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:38:55,764][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:38:55,764][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:38:55,765][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:38:55,766][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:38:55,766][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:38:55,766][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:38:55,767][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:38:55,767][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:38:55,767][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:38:55,768][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:38:55,768][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:38:55,768][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:38:55,768][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:38:55,768][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:38:55,769][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:38:55,856][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:38:55,862][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:38:55,869][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:38:55,870][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:38:55,903][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:38:55,904][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:38:55,904][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:38:55,904][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:38:55,905][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:38:55,905][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:38:55,905][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:38:55,906][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:38:55,906][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:38:55,906][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:38:55,916][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:38:55,917][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:38:55,917][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:38:55,917][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:38:55,917][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:38:55,917][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:38:55,917][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:38:55,918][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:38:55,918][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:38:55,918][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:38:55,928][aim.sdk.reporter][INFO] - creating RunStatusReporter for 8088ef2b4a4044baa7ee76f8
+[2023-08-12 18:38:55,928][aim.sdk.reporter][INFO] - creating RunStatusReporter for cd326482b1954d75856222d9
+[2023-08-12 18:38:55,929][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:38:55,929][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:38:55,929][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f57e67250d0>
+[2023-08-12 18:38:55,930][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fea3d116110>
+[2023-08-12 18:38:55,939][aim.sdk.reporter][INFO] - creating RunStatusReporter for b711fa13f6c541a986326891
+[2023-08-12 18:38:55,939][aim.sdk.reporter][INFO] - creating RunStatusReporter for 7cfc5a29e205477da38dc087
+[2023-08-12 18:38:55,940][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:38:55,940][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7faf733c3410>
+[2023-08-12 18:38:55,940][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:38:55,941][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fb39a199250>
+[2023-08-12 18:38:56,127][classifier.train][INFO] - Starting training!
+[2023-08-12 18:38:56,144][classifier.train][INFO] - Starting training!
+[2023-08-12 18:38:56,302][classifier.train][INFO] - Starting training!
+[2023-08-12 18:38:56,318][classifier.train][INFO] - Starting training!
+[2023-08-12 18:39:05,634][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 68, in __init__
+    raise RuntimeError("Dataset not found or corrupted. You can use download=True to download it")
+RuntimeError: Dataset not found or corrupted. You can use download=True to download it
+[2023-08-12 18:39:05,639][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-38-45/1
+[2023-08-12 18:39:07,001][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:39:07,004][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:39:07,105][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:39:07,106][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:39:07,107][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:39:07,109][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:39:07,111][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:39:07,113][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:39:07,114][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:39:07,117][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:39:07,118][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:39:07,119][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:39:07,127][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:39:07,207][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:39:07,207][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:39:07,207][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:39:07,207][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:39:07,207][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:39:07,223][aim.sdk.reporter][INFO] - creating RunStatusReporter for 08fe349b26da4501881b1e91
+[2023-08-12 18:39:07,224][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:39:07,224][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fb399df9490>
+[2023-08-12 18:39:07,506][classifier.train][INFO] - Starting training!
+[2023-08-12 18:39:08,230][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 82, in __init__
+    entry = pickle.load(f, encoding="latin1")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: pickle data was truncated
+[2023-08-12 18:39:08,234][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-38-45/2
+[2023-08-12 18:39:08,298][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 82, in __init__
+    entry = pickle.load(f, encoding="latin1")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_pickle.UnpicklingError: pickle data was truncated
+[2023-08-12 18:39:08,301][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-38-45/0
+[2023-08-12 18:39:08,904][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 925, in _run
+    self._data_connector.prepare_data()
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py", line 94, in prepare_data
+    call._call_lightning_datamodule_hook(trainer, "prepare_data")
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 72, in prepare_data
+    CIFAR10(self.hparams.data_dir, train=True , download=True)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torchvision/datasets/cifar.py", line 68, in __init__
+    raise RuntimeError("Dataset not found or corrupted. You can use download=True to download it")
+RuntimeError: Dataset not found or corrupted. You can use download=True to download it
+[2023-08-12 18:39:08,907][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-38-45/3
+[2023-08-12 18:39:13,211][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 88, in setup
+    self.data_train,self.data_val,self.data_test = random_split(dataset=dataset,
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-12 18:39:13,214][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-38-45/4
+[2023-08-12 18:46:25,116][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:46:25,121][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:46:25,152][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:46:25,153][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:46:25,157][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:46:25,249][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:46:25,253][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:46:25,308][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:46:25,309][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:46:25,313][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:46:25,423][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:46:25,427][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:46:25,455][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:46:25,456][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:46:25,460][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:46:25,509][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:46:25,513][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:46:25,546][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:46:25,546][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:46:25,552][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:46:25,713][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:46:25,716][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:46:25,718][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:46:25,718][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:46:25,721][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:46:25,722][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:46:25,723][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:46:25,838][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:46:25,844][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:46:25,848][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:46:25,850][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:46:25,850][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:46:25,853][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:46:25,854][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:46:25,855][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:46:25,860][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:46:25,860][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:46:25,860][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:46:25,860][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:46:25,861][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:46:25,913][aim.sdk.reporter][INFO] - creating RunStatusReporter for 4cff73eb277a450a8b43da2c
+[2023-08-12 18:46:25,914][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:46:25,914][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fc6cbf5af90>
+[2023-08-12 18:46:26,012][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:46:26,021][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:46:26,024][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:46:26,027][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:46:26,027][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:46:26,030][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:46:26,031][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:46:26,032][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:46:26,035][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:46:26,036][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:46:26,036][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:46:26,036][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:46:26,036][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:46:26,056][aim.sdk.reporter][INFO] - creating RunStatusReporter for d9cdccd4e6d047b2820b4f0c
+[2023-08-12 18:46:26,057][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:46:26,057][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f4a5ad24dd0>
+[2023-08-12 18:46:26,137][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:46:26,141][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:46:26,143][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:46:26,143][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:46:26,145][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:46:26,146][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:46:26,147][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:46:26,157][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:46:26,162][classifier.train][INFO] - Starting training!
+[2023-08-12 18:46:26,212][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:46:26,212][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:46:26,212][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:46:26,212][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:46:26,213][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:46:26,232][aim.sdk.reporter][INFO] - creating RunStatusReporter for 2c14c17756b7476082ff2cd0
+[2023-08-12 18:46:26,233][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:46:26,233][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f39a3bbf610>
+[2023-08-12 18:46:26,301][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:46:26,324][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:46:26,324][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:46:26,325][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:46:26,325][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:46:26,325][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:46:26,341][classifier.train][INFO] - Starting training!
+[2023-08-12 18:46:26,345][aim.sdk.reporter][INFO] - creating RunStatusReporter for d9df962ed354449a806da8d0
+[2023-08-12 18:46:26,346][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:46:26,347][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f36d4f8b650>
+[2023-08-12 18:46:26,511][classifier.train][INFO] - Starting training!
+[2023-08-12 18:46:26,614][classifier.train][INFO] - Starting training!
+[2023-08-12 18:46:30,161][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 54, in setup
+    self.data_train, self.data_val, self.data_test = random_split(
+                                                     ^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-12 18:46:30,164][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-46-15/0
+[2023-08-12 18:46:30,173][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 54, in setup
+    self.data_train, self.data_val, self.data_test = random_split(
+                                                     ^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-12 18:46:30,176][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-46-15/2
+[2023-08-12 18:46:30,263][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 54, in setup
+    self.data_train, self.data_val, self.data_test = random_split(
+                                                     ^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-12 18:46:30,265][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-46-15/3
+[2023-08-12 18:46:30,381][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 54, in setup
+    self.data_train, self.data_val, self.data_test = random_split(
+                                                     ^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-12 18:46:30,384][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-46-15/1
+[2023-08-12 18:46:30,809][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:46:30,812][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:46:30,842][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:46:30,843][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:46:30,845][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:46:30,847][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:46:30,851][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:46:30,853][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:46:30,853][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:46:30,855][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:46:30,856][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:46:30,857][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:46:30,863][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:46:30,884][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:46:30,884][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:46:30,884][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:46:30,884][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:46:30,884][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:46:30,897][aim.sdk.reporter][INFO] - creating RunStatusReporter for 9207f5f1d86e4cc3876f29db
+[2023-08-12 18:46:30,897][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:46:30,898][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f4a5e62e190>
+[2023-08-12 18:46:30,994][classifier.train][INFO] - Starting training!
+[2023-08-12 18:46:33,593][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 529, in fit
+    call._call_and_handle_interrupt(
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 42, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 568, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/trainer.py", line 934, in _run
+    call._call_setup_hook(self)  # allow user to setup lightning_module in accelerator environment
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 83, in _call_setup_hook
+    _call_lightning_datamodule_hook(trainer, "setup", stage=fn)
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py", line 164, in _call_lightning_datamodule_hook
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/cifar10_datamodule.py", line 54, in setup
+    self.data_train, self.data_val, self.data_test = random_split(
+                                                     ^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/torch/utils/data/dataset.py", line 353, in random_split
+    raise ValueError("Sum of input lengths does not equal the length of the input dataset!")
+ValueError: Sum of input lengths does not equal the length of the input dataset!
+[2023-08-12 18:46:33,594][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-46-15/4
+[2023-08-12 18:49:54,609][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:49:54,613][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:49:54,622][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:49:54,625][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:49:54,645][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:49:54,646][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:49:54,651][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:49:54,660][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:49:54,661][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:49:54,665][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:49:54,837][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:49:54,840][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:49:54,871][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:49:54,871][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:49:54,901][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:49:55,016][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 18:49:55,020][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 18:49:55,049][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 18:49:55,049][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 18:49:55,053][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 18:49:55,164][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:49:55,200][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:49:55,202][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:49:55,203][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:49:55,205][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:49:55,206][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:49:55,207][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:49:55,211][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:49:55,214][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:49:55,216][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:49:55,217][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:49:55,219][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:49:55,220][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:49:55,221][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:49:55,338][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:49:55,341][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:49:55,362][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:49:55,363][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:49:55,363][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:49:55,363][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:49:55,363][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:49:55,369][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:49:55,369][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:49:55,369][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:49:55,369][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:49:55,370][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:49:55,409][aim.sdk.reporter][INFO] - creating RunStatusReporter for b2a4a5c1bc5240cab6286a24
+[2023-08-12 18:49:55,410][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:49:55,410][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fc65f742890>
+[2023-08-12 18:49:55,416][aim.sdk.reporter][INFO] - creating RunStatusReporter for 85a25cedd9344c55802c88ec
+[2023-08-12 18:49:55,417][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:49:55,417][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f3f6ab5c8d0>
+[2023-08-12 18:49:55,439][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:49:55,443][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:49:55,445][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:49:55,445][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:49:55,448][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:49:55,448][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:49:55,449][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:49:55,565][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:49:55,611][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:49:55,611][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:49:55,611][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:49:55,611][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:49:55,612][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:49:55,628][aim.sdk.reporter][INFO] - creating RunStatusReporter for 7ff1a4e9acb44dd9a47585c6
+[2023-08-12 18:49:55,629][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:49:55,629][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f03e6969150>
+[2023-08-12 18:49:55,635][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 18:49:55,638][classifier.train][INFO] - Starting training!
+[2023-08-12 18:49:55,639][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 18:49:55,641][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 18:49:55,641][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 18:49:55,644][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 18:49:55,644][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 18:49:55,645][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 18:49:55,711][classifier.train][INFO] - Starting training!
+[2023-08-12 18:49:55,759][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 18:49:55,804][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 18:49:55,805][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 18:49:55,805][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 18:49:55,805][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 18:49:55,806][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 18:49:55,823][aim.sdk.reporter][INFO] - creating RunStatusReporter for 203071f0ebae446aa56de86e
+[2023-08-12 18:49:55,823][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 18:49:55,823][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fc25cf5cd90>
+[2023-08-12 18:49:55,910][classifier.train][INFO] - Starting training!
+[2023-08-12 18:49:56,115][classifier.train][INFO] - Starting training!
+[2023-08-12 19:05:48,439][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=2` reached.
+[2023-08-12 19:05:49,763][classifier.train][INFO] - Starting testing!
+[2023-08-12 19:05:56,853][aim.sdk.reporter][INFO] - creating RunStatusReporter for 7ff1a4e9acb44dd9a47585c6
+[2023-08-12 19:05:56,863][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 19:05:56,863][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f03e496e050>
+[2023-08-12 19:05:57,403][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/3/checkpoints/epoch_001.ckpt
+[2023-08-12 19:05:57,622][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/3/checkpoints/epoch_001.ckpt
+[2023-08-12 19:06:47,664][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/3/checkpoints/epoch_001.ckpt
+[2023-08-12 19:06:47,753][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/3
+[2023-08-12 19:06:47,823][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2023-08-12 19:07:04,078][classifier.train][INFO] - Instantiating datamodule <classifier.data.cifar10_datamodule.CIFARDataModule>
+[2023-08-12 19:07:04,098][classifier.train][INFO] - Instantiating model <classifier.models.vit_module.VitLitModule>
+[2023-08-12 19:07:04,221][classifier.train][INFO] - Instantiating loggers...
+[2023-08-12 19:07:04,222][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-12 19:07:04,224][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-12 19:07:04,227][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-12 19:07:04,230][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-12 19:07:04,232][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-12 19:07:04,232][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-12 19:07:04,235][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-12 19:07:04,236][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-12 19:07:04,238][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-12 19:07:04,245][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-12 19:07:04,328][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-12 19:07:04,328][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-12 19:07:04,328][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-12 19:07:04,329][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-12 19:07:04,329][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-12 19:07:04,388][aim.sdk.reporter][INFO] - creating RunStatusReporter for e83528db64f245e4a48cd267
+[2023-08-12 19:07:04,389][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 19:07:04,389][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f03e9de1cd0>
+[2023-08-12 19:07:04,812][classifier.train][INFO] - Starting training!
+[2023-08-12 19:17:20,542][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=2` reached.
+[2023-08-12 19:17:21,400][classifier.train][INFO] - Starting testing!
+[2023-08-12 19:17:34,813][aim.sdk.reporter][INFO] - creating RunStatusReporter for e83528db64f245e4a48cd267
+[2023-08-12 19:17:34,910][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 19:17:34,912][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f03e45c9b50>
+[2023-08-12 19:17:39,021][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/4/checkpoints/epoch_001.ckpt
+[2023-08-12 19:17:42,845][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/4/checkpoints/epoch_001.ckpt
+[2023-08-12 19:18:11,229][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/4/checkpoints/epoch_001.ckpt
+[2023-08-12 19:18:11,237][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/4
+[2023-08-12 19:18:11,340][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2023-08-12 19:23:56,907][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=2` reached.
+[2023-08-12 19:23:58,226][classifier.train][INFO] - Starting testing!
+[2023-08-12 19:24:03,232][aim.sdk.reporter][INFO] - creating RunStatusReporter for b2a4a5c1bc5240cab6286a24
+[2023-08-12 19:24:03,242][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-12 19:24:03,243][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fc660be97d0>
+[2023-08-12 19:24:03,810][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/2/checkpoints/epoch_001.ckpt
+[2023-08-12 19:24:04,058][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/2/checkpoints/epoch_001.ckpt
+[2023-08-12 19:26:54,320][classifier.train][INFO] - Best ckpt path: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/2/checkpoints/epoch_001.ckpt
+[2023-08-12 19:26:54,406][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_18-49-44/2
+[2023-08-12 19:26:54,519][classifier.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...

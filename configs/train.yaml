@@ -15,6 +15,8 @@ defaults:
   # experiment configs allow for version control of specific hyperparameters
   # e.g. best hyperparameters for given model and datamodule
   - experiment: null
+  - hparams_search: null
+
 
 # task name, determines output directory path
 task_name: "train"
@@ -30,7 +32,10 @@ test: True
 compile: False
 
 # simply provide checkpoint path to resume training
-ckpt_path: 
+ckpt_path: null
 
 # seed for random number generators in pytorch, numpy and python.random
 seed: null
+
+# tuner for best learning rate and batch size
+tuner: False

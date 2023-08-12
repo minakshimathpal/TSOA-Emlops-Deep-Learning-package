@@ -70,9 +70,24 @@ def train(cfg: DictConfig) -> Tuple[dict, dict]:
     if cfg.get("compile"):
         model = torch.compile(model)
 
+    if cfg.get("tuner"):
+        log.info("Running LR Finder!")
+        tuner = Tuner(trainer)
+        lr_finder = tuner.lr_find(model, datamodule)
+        print(f"best initial lr={lr_finder.suggestion()}")
+        # model.hparams.learning_rate = lr_finder.suggestion()
+
+        log.info("Running Batch Size Finder!")
+        # Auto-scale batch size by growing it exponentially (default)
+        tuner.scale_batch_size(model, datamodule, mode="power")
+        print(f"optimal batch size = {datamodule.hparams.batch_size}")
+
     if cfg.get("train"):
         log.info("Starting training!")
         trainer.fit(model=model, datamodule=datamodule, ckpt_path=cfg.get("ckpt_path"))
+
+        # ckpt_save_path = cfg.get('ckpt_save_path')
+        # trainer.save_checkpoint(ckpt_save_path)
 
     train_metrics = trainer.callback_metrics
 

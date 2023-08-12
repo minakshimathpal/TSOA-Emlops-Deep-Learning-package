@@ -8,6 +8,7 @@ import torch
 import torch.nn.functional as F
 import torchvision.transforms as T
 import json
+from omegaconf import DictConfig, OmegaConf
 
 from classifier.utils import pylogger
 
@@ -88,6 +89,8 @@ def predict(cfg: DictConfig) -> Tuple[dict, dict]:
 @hydra.main(version_base="1.3", config_path="../configs", config_name="predict.yaml")
 def main(cfg: DictConfig):
     # Run inference on the model
+    # print(OmegaConf.to_yaml(cfg))
+
     predict(cfg)
 
 
