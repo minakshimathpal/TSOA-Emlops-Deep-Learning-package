@@ -175,6 +175,16 @@ Running Experiments you would see somthing like this
 
 </div>
 
+</div>
+
+- Inference using  ```classifier/predict.py experiments=cat_dog_infer``` or ```classifier_eval experiments=cat_dog_infer``` :
+<div align="center">
+
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/inference_vit_cat_dog_experiment.PNG)
+![](https://github.com/minakshimathpal/TSOA-Emlops-Deep-Learning-package/blob/main/artifacts/prediction_cat_dog_experiment.PNG)
+
+</div>
+
 ## DVC Configuration
 #Set remote storage for storing data and model artifacts
 ```bash
