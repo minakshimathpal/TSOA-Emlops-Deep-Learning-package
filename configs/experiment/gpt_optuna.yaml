@@ -1,15 +1,16 @@
 # @package _global_
 
 # to execute this experiment run:
-# ninja_train -m experiment=gpt_harrypotter_optuna datamodule.num_workers=0
+# python train.py experiment=cat_dog
 
 defaults:
-  - override /datamodule: harrypotter.yaml
+  - override /data: harryPotter.yaml
   - override /model: gpt.yaml
   - override /trainer: default.yaml
   - override /logger: many_loggers.yaml
   - override /callbacks: default.yaml
-  - override /hparams_search: gpt_optuna.yaml
+  - override /hparams_search: gpt.yaml
+              
 
 # all parameters below will be merged with parameters from default configurations set above
 # this allows you to overwrite only specified parameters
@@ -17,13 +18,16 @@ defaults:
 experiment_name: "gpt harrypotter optuna experiment"
 
 tags:
-  harrypotter: "optuna_exp"
+  mnist: "optuna_exp"
 
 seed: 12345
 
 trainer:
   min_epochs: 0
   max_epochs: 1
+
+
+compile: False
 
 logger:
   mlflow:
