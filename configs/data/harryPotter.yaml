@@ -1,8 +1,8 @@
 _target_: classifier.data.harryPotter_dataModule.HarryPotterDataModule
 data_dir: ${paths.data_dir}
-data_file: "data.txt"
+# data_file: "data.txt"
 batch_size: 1024
-train_ratio: 0.7
+train_ratio: 0.3
 num_workers: 0
 pin_memory: False
 block_size: 4

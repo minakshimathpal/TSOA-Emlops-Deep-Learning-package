@@ -9,6 +9,8 @@ sys.path.append("./")
 from omegaconf import DictConfig, OmegaConf
 from classifier.utils.pylogger import get_pylogger
 from classifier import utils
+from lightning.pytorch.tuner import Tuner
+
 log = get_pylogger(__name__)
 
 

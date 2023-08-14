@@ -2854,3 +2854,1847 @@ Traceback (most recent call last):
 hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
 full_key: data
 [2023-08-12 20:42:14,595][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-12_20-42-12/3
+[2023-08-13 13:23:26,070][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:23:26,072][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 1, in <module>
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'tiktoken'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:23:26,075][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-23-24/0
+[2023-08-13 13:23:26,295][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:23:26,297][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 1, in <module>
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'tiktoken'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:23:26,299][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-23-24/1
+[2023-08-13 13:23:26,510][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:23:26,513][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 1, in <module>
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'tiktoken'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:23:26,515][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-23-24/2
+[2023-08-13 13:23:26,735][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:23:26,737][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 1, in <module>
+    import tiktoken
+ModuleNotFoundError: No module named 'tiktoken'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'tiktoken'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:23:26,738][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-23-24/3
+[2023-08-13 13:27:43,023][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:27:43,029][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 15, in <module>
+    from torchsummary import summary
+ModuleNotFoundError: No module named 'torchsummary'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'torchsummary'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:27:43,032][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-27-42/0
+[2023-08-13 13:27:43,231][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:27:43,233][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 15, in <module>
+    from torchsummary import summary
+ModuleNotFoundError: No module named 'torchsummary'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'torchsummary'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:27:43,234][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-27-42/1
+[2023-08-13 13:27:43,434][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:27:43,436][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 15, in <module>
+    from torchsummary import summary
+ModuleNotFoundError: No module named 'torchsummary'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'torchsummary'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:27:43,437][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-27-42/2
+[2023-08-13 13:27:43,636][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:27:43,638][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.data' has no attribute 'harryPotter_dataModule'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/data/harryPotter_dataModule.py", line 15, in <module>
+    from torchsummary import summary
+ModuleNotFoundError: No module named 'torchsummary'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 653, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+ModuleNotFoundError("No module named 'torchsummary'")
+Are you sure that 'harryPotter_dataModule' is importable from module 'classifier.data'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: data
+[2023-08-13 13:27:43,639][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-27-42/3
+[2023-08-13 13:29:44,810][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:29:44,817][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+TypeError("HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'")
+full_key: data
+[2023-08-13 13:29:44,819][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-29-43/0
+[2023-08-13 13:29:45,020][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:29:45,021][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+TypeError("HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'")
+full_key: data
+[2023-08-13 13:29:45,023][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-29-43/1
+[2023-08-13 13:29:45,253][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:29:45,255][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+TypeError("HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'")
+full_key: data
+[2023-08-13 13:29:45,256][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-29-43/2
+[2023-08-13 13:29:45,535][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:29:45,537][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 43, in train
+    datamodule: LightningDataModule = hydra.utils.instantiate(cfg.data)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.data.harryPotter_dataModule.HarryPotterDataModule':
+TypeError("HarryPotterDataModule.__init__() got an unexpected keyword argument 'data_file'")
+full_key: data
+[2023-08-13 13:29:45,538][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-29-43/3
+[2023-08-13 13:33:07,609][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:33:07,615][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:33:07,657][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'block_size'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'block_size'")
+full_key: model
+[2023-08-13 13:33:07,659][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-33-06/0
+[2023-08-13 13:33:07,935][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:33:07,937][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:33:07,978][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'block_size'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'block_size'")
+full_key: model
+[2023-08-13 13:33:07,979][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-33-06/1
+[2023-08-13 13:33:08,198][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:33:08,200][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:33:08,274][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'block_size'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'block_size'")
+full_key: model
+[2023-08-13 13:33:08,276][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-33-06/2
+[2023-08-13 13:33:08,479][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:33:08,480][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:33:08,631][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'block_size'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'block_size'")
+full_key: model
+[2023-08-13 13:33:08,633][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-33-06/3
+[2023-08-13 13:34:35,591][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:34:35,597][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:34:35,640][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'")
+full_key: model
+[2023-08-13 13:34:35,642][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-34-34/0
+[2023-08-13 13:34:35,856][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:34:35,857][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:34:35,898][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'")
+full_key: model
+[2023-08-13 13:34:35,900][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-34-34/1
+[2023-08-13 13:34:36,124][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:34:36,126][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:34:36,217][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'")
+full_key: model
+[2023-08-13 13:34:36,218][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-34-34/2
+[2023-08-13 13:34:36,430][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:34:36,432][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:34:36,580][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'classifier.models.gpt_module.GPTLitModule':
+TypeError("GPTLitModule.__init__() got an unexpected keyword argument 'optimizer'")
+full_key: model
+[2023-08-13 13:34:36,584][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-34-34/3
+[2023-08-13 13:35:39,706][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:35:39,713][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:35:39,718][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 231
+    block_size=8
+               
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('invalid syntax. Perhaps you forgot a comma?', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 231, 20, '        block_size=8\n', 232, 18))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:35:39,721][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-35-38/0
+[2023-08-13 13:35:39,945][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:35:39,946][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:35:39,950][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 231
+    block_size=8
+               
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('invalid syntax. Perhaps you forgot a comma?', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 231, 20, '        block_size=8\n', 232, 18))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:35:39,952][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-35-38/1
+[2023-08-13 13:35:40,149][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:35:40,151][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:35:40,155][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 231
+    block_size=8
+               
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('invalid syntax. Perhaps you forgot a comma?', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 231, 20, '        block_size=8\n', 232, 18))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:35:40,157][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-35-38/2
+[2023-08-13 13:35:40,362][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:35:40,363][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:35:40,367][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 231
+    block_size=8
+               
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('invalid syntax. Perhaps you forgot a comma?', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 231, 20, '        block_size=8\n', 232, 18))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:35:40,369][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-35-38/3
+[2023-08-13 13:36:48,451][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:36:48,457][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:36:48,462][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 232
+    optimizer: torch.optim.Optimizer,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('non-default argument follows default argument', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 232, 9, '        optimizer: torch.optim.Optimizer,\n', 232, 41))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:36:48,465][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-36-47/0
+[2023-08-13 13:36:48,682][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:36:48,683][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:36:48,688][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 232
+    optimizer: torch.optim.Optimizer,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('non-default argument follows default argument', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 232, 9, '        optimizer: torch.optim.Optimizer,\n', 232, 41))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:36:48,690][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-36-47/1
+[2023-08-13 13:36:48,894][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:36:48,896][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:36:48,900][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 232
+    optimizer: torch.optim.Optimizer,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('non-default argument follows default argument', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 232, 9, '        optimizer: torch.optim.Optimizer,\n', 232, 41))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:36:48,902][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-36-47/2
+[2023-08-13 13:36:49,111][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:36:49,112][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:36:49,117][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 644, in _locate
+    obj = getattr(obj, part)
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'classifier.models' has no attribute 'gpt_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 650, in _locate
+    obj = import_module(mod)
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/gitpod/.pyenv/versions/3.11.1/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py", line 232
+    optimizer: torch.optim.Optimizer,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 134, in _resolve_target
+    target = _locate(target)
+             ^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/utils.py", line 658, in _locate
+    raise ImportError(
+ImportError: Error loading 'classifier.models.gpt_module.GPTLitModule':
+SyntaxError('non-default argument follows default argument', ('/workspace/TSOA-Emlops-Deep-Learning-package/classifier/models/gpt_module.py', 232, 9, '        optimizer: torch.optim.Optimizer,\n', 232, 41))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 46, in train
+    model: LightningModule = hydra.utils.instantiate(cfg.model)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 333, in instantiate_node
+    _target_ = _resolve_target(node.get(_Keys.TARGET), full_key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pyenv_mirror/user/current/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 139, in _resolve_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error locating target 'classifier.models.gpt_module.GPTLitModule', set env var HYDRA_FULL_ERROR=1 to see chained exception.
+full_key: model
+[2023-08-13 13:36:49,119][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-36-47/3
+[2023-08-13 13:38:40,048][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:38:40,055][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:38:40,099][classifier.train][INFO] - Instantiating loggers...
+[2023-08-13 13:38:40,100][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-13 13:38:40,103][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-13 13:38:40,189][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-13 13:38:40,189][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-13 13:38:40,189][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-13 13:38:40,189][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-13 13:38:40,189][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-13 13:38:40,349][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-13 13:38:40,352][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-13 13:38:40,354][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-13 13:38:40,354][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-13 13:38:40,356][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-13 13:38:40,357][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-13 13:38:40,357][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-13 13:38:40,434][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-13 13:38:40,453][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-13 13:38:40,453][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-13 13:38:40,453][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-13 13:38:40,453][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-13 13:38:40,454][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-13 13:38:40,468][aim.sdk.reporter][INFO] - creating RunStatusReporter for f0f45d4c7cf547f39c058a68
+[2023-08-13 13:38:40,469][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 13:38:40,469][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f55ee11af90>
+[2023-08-13 13:38:40,886][classifier.train][INFO] - Running LR Finder!
+[2023-08-13 13:38:40,889][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    tuner = Tuner(trainer)
+            ^^^^^
+NameError: name 'Tuner' is not defined
+[2023-08-13 13:38:40,890][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-38-38/0
+[2023-08-13 13:38:41,103][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:38:41,105][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:38:41,147][classifier.train][INFO] - Instantiating loggers...
+[2023-08-13 13:38:41,148][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-13 13:38:41,149][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-13 13:38:41,151][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-13 13:38:41,153][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-13 13:38:41,155][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-13 13:38:41,155][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-13 13:38:41,157][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-13 13:38:41,157][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-13 13:38:41,158][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-13 13:38:41,163][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-13 13:38:41,179][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-13 13:38:41,179][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-13 13:38:41,179][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-13 13:38:41,179][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-13 13:38:41,179][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-13 13:38:41,189][aim.sdk.reporter][INFO] - creating RunStatusReporter for 248d3b58794649058426c2d0
+[2023-08-13 13:38:41,189][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 13:38:41,189][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f55e73cfc90>
+[2023-08-13 13:38:41,263][classifier.train][INFO] - Running LR Finder!
+[2023-08-13 13:38:41,263][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    tuner = Tuner(trainer)
+            ^^^^^
+NameError: name 'Tuner' is not defined
+[2023-08-13 13:38:41,266][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-38-38/1
+[2023-08-13 13:38:41,472][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:38:41,474][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:38:41,558][classifier.train][INFO] - Instantiating loggers...
+[2023-08-13 13:38:41,559][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-13 13:38:41,560][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-13 13:38:41,561][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-13 13:38:41,563][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-13 13:38:41,566][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-13 13:38:41,566][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-13 13:38:41,568][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-13 13:38:41,568][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-13 13:38:41,569][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-13 13:38:41,574][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-13 13:38:41,591][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-13 13:38:41,591][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-13 13:38:41,591][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-13 13:38:41,592][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-13 13:38:41,592][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-13 13:38:41,601][aim.sdk.reporter][INFO] - creating RunStatusReporter for 76ee16af1830425d8785a4a0
+[2023-08-13 13:38:41,601][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 13:38:41,602][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f55e73d7950>
+[2023-08-13 13:38:41,675][classifier.train][INFO] - Running LR Finder!
+[2023-08-13 13:38:41,677][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    tuner = Tuner(trainer)
+            ^^^^^
+NameError: name 'Tuner' is not defined
+[2023-08-13 13:38:41,679][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-38-38/2
+[2023-08-13 13:38:41,895][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:38:41,897][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:38:42,055][classifier.train][INFO] - Instantiating loggers...
+[2023-08-13 13:38:42,056][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-13 13:38:42,057][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-13 13:38:42,058][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-13 13:38:42,060][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-13 13:38:42,062][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-13 13:38:42,062][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-13 13:38:42,064][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-13 13:38:42,065][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-13 13:38:42,065][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-13 13:38:42,070][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-13 13:38:42,085][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-13 13:38:42,085][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-13 13:38:42,086][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-13 13:38:42,086][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-13 13:38:42,086][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-13 13:38:42,096][aim.sdk.reporter][INFO] - creating RunStatusReporter for 1534e20121ed424c9c387270
+[2023-08-13 13:38:42,096][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 13:38:42,097][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f55e6737610>
+[2023-08-13 13:38:42,170][classifier.train][INFO] - Running LR Finder!
+[2023-08-13 13:38:42,171][classifier.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+                               ^^^^^^^^^^^^^^^^^^
+  File "/workspace/TSOA-Emlops-Deep-Learning-package/classifier/train.py", line 75, in train
+    tuner = Tuner(trainer)
+            ^^^^^
+NameError: name 'Tuner' is not defined
+[2023-08-13 13:38:42,173][classifier.utils.utils][INFO] - Output dir: /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-38-38/3
+[2023-08-13 13:40:02,971][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 13:40:02,978][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 13:40:03,025][classifier.train][INFO] - Instantiating loggers...
+[2023-08-13 13:40:03,025][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-13 13:40:03,028][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-13 13:40:03,269][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-13 13:40:03,272][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-13 13:40:03,273][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-13 13:40:03,274][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-13 13:40:03,276][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-13 13:40:03,276][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-13 13:40:03,277][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-13 13:40:03,350][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-13 13:40:03,369][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-13 13:40:03,369][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-13 13:40:03,369][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-13 13:40:03,369][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-13 13:40:03,369][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-13 13:40:03,384][aim.sdk.reporter][INFO] - creating RunStatusReporter for e8f8d95b86964b8eaefacba5
+[2023-08-13 13:40:03,384][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 13:40:03,385][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f6cca789b90>
+[2023-08-13 13:40:03,777][classifier.train][INFO] - Running LR Finder!
+[2023-08-13 13:53:41,430][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=1` reached.
+[2023-08-13 13:53:41,431][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-40-01/0/.lr_find_c2266034-7df7-4afa-8fa9-f66f3dc875a5.ckpt
+[2023-08-13 13:53:41,451][pytorch_lightning.utilities.rank_zero][INFO] - Restored all states from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_13-40-01/0/.lr_find_c2266034-7df7-4afa-8fa9-f66f3dc875a5.ckpt
+[2023-08-13 13:53:41,612][classifier.train][INFO] - Running Batch Size Finder!
+[2023-08-13 13:53:43,417][aim.sdk.reporter][INFO] - creating RunStatusReporter for e8f8d95b86964b8eaefacba5
+[2023-08-13 13:53:43,418][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 13:53:43,418][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f6cc813ca90>
+[2023-08-13 13:54:04,089][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:04,090][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2 succeeded, trying batch size 4
+[2023-08-13 13:54:04,998][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:04,999][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4 succeeded, trying batch size 8
+[2023-08-13 13:54:05,897][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:05,897][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 8 succeeded, trying batch size 16
+[2023-08-13 13:54:07,199][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:07,200][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 16 succeeded, trying batch size 32
+[2023-08-13 13:54:08,791][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:08,791][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 32 succeeded, trying batch size 64
+[2023-08-13 13:54:10,292][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:10,293][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 64 succeeded, trying batch size 128
+[2023-08-13 13:54:11,936][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:11,937][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 128 succeeded, trying batch size 256
+[2023-08-13 13:54:15,035][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:15,036][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 256 succeeded, trying batch size 512
+[2023-08-13 13:54:22,089][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:22,089][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 512 succeeded, trying batch size 1024
+[2023-08-13 13:54:34,676][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:54:34,677][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 1024 succeeded, trying batch size 2048
+[2023-08-13 13:55:43,733][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 13:55:43,794][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2048 succeeded, trying batch size 4096
+[2023-08-13 14:01:47,729][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 14:01:47,795][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4096 succeeded, trying batch size 8192
+[2023-08-13 14:30:28,398][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 14:30:28,460][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 8192 succeeded, trying batch size 16384
+[2023-08-13 16:56:42,891][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-13 16:56:42,899][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-13 16:56:43,023][classifier.train][INFO] - Instantiating loggers...
+[2023-08-13 16:56:43,024][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-13 16:56:43,027][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-13 16:56:43,501][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-13 16:56:43,501][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-13 16:56:43,501][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-13 16:56:43,501][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-13 16:56:43,502][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-13 16:56:43,685][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-13 16:56:43,689][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-13 16:56:43,691][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-13 16:56:43,691][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-13 16:56:43,694][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-13 16:56:43,695][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-13 16:56:43,695][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-13 16:56:43,774][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-13 16:56:43,796][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-13 16:56:43,796][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-13 16:56:43,797][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-13 16:56:43,797][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-13 16:56:43,797][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-13 16:56:43,816][aim.sdk.reporter][INFO] - creating RunStatusReporter for 8f540e7a47ec40e8a75b8a80
+[2023-08-13 16:56:43,817][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 16:56:43,817][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fc362e86e10>
+[2023-08-13 16:56:44,019][classifier.train][INFO] - Running LR Finder!
+[2023-08-13 17:07:12,322][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=1` reached.
+[2023-08-13 17:07:12,323][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_16-56-42/0/.lr_find_af7f2bb6-ea81-46ad-a1fb-b9acf17e8c0b.ckpt
+[2023-08-13 17:07:12,357][pytorch_lightning.utilities.rank_zero][INFO] - Restored all states from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-13_16-56-42/0/.lr_find_af7f2bb6-ea81-46ad-a1fb-b9acf17e8c0b.ckpt
+[2023-08-13 17:07:12,475][classifier.train][INFO] - Running Batch Size Finder!
+[2023-08-13 17:07:13,976][aim.sdk.reporter][INFO] - creating RunStatusReporter for 8f540e7a47ec40e8a75b8a80
+[2023-08-13 17:07:13,977][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-13 17:07:13,977][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fc354124550>
+[2023-08-13 17:07:26,413][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:26,414][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2 succeeded, trying batch size 4
+[2023-08-13 17:07:27,186][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:27,186][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4 succeeded, trying batch size 8
+[2023-08-13 17:07:27,917][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:27,917][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 8 succeeded, trying batch size 16
+[2023-08-13 17:07:28,901][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:28,902][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 16 succeeded, trying batch size 32
+[2023-08-13 17:07:30,392][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:30,393][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 32 succeeded, trying batch size 64
+[2023-08-13 17:07:32,095][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:32,095][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 64 succeeded, trying batch size 128
+[2023-08-13 17:07:34,401][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:34,401][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 128 succeeded, trying batch size 256
+[2023-08-13 17:07:38,185][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:38,186][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 256 succeeded, trying batch size 512
+[2023-08-13 17:07:44,611][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:44,611][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 512 succeeded, trying batch size 1024
+[2023-08-13 17:07:56,789][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:07:56,789][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 1024 succeeded, trying batch size 2048
+[2023-08-13 17:09:04,341][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:09:04,400][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2048 succeeded, trying batch size 4096
+[2023-08-13 17:16:22,710][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-13 17:16:22,767][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4096 succeeded, trying batch size 8192
+[2023-08-14 10:26:05,108][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 10:26:05,115][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 10:26:05,195][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 10:26:05,196][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 10:26:05,199][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 10:26:05,605][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-14 10:26:05,605][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-14 10:26:05,605][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-14 10:26:05,606][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-14 10:26:05,606][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-14 10:26:05,766][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 10:26:05,769][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 10:26:05,770][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 10:26:05,770][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 10:26:05,773][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 10:26:05,773][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 10:26:05,774][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 10:26:05,849][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 10:26:05,869][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 10:26:05,870][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 10:26:05,870][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 10:26:05,870][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 10:26:05,870][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 10:26:05,888][aim.sdk.reporter][INFO] - creating RunStatusReporter for 3d87c9dc3550437080625664
+[2023-08-14 10:26:05,889][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 10:26:05,889][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7ff8d1324c90>
+[2023-08-14 10:26:06,069][classifier.train][INFO] - Running LR Finder!
+[2023-08-14 10:43:02,101][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=1` reached.
+[2023-08-14 10:43:02,105][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-14_10-26-04/0/.lr_find_e8baa9f1-6fee-4eb7-9c26-6e8e4013d09a.ckpt
+[2023-08-14 10:43:02,253][pytorch_lightning.utilities.rank_zero][INFO] - Restored all states from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-14_10-26-04/0/.lr_find_e8baa9f1-6fee-4eb7-9c26-6e8e4013d09a.ckpt
+[2023-08-14 10:43:02,408][classifier.train][INFO] - Running Batch Size Finder!
+[2023-08-14 10:43:04,065][aim.sdk.reporter][INFO] - creating RunStatusReporter for 3d87c9dc3550437080625664
+[2023-08-14 10:43:04,066][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 10:43:04,066][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7ff8d02c7f50>
+[2023-08-14 10:43:30,237][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:30,238][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2 succeeded, trying batch size 4
+[2023-08-14 10:43:31,442][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:31,442][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4 succeeded, trying batch size 8
+[2023-08-14 10:43:32,753][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:32,754][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 8 succeeded, trying batch size 16
+[2023-08-14 10:43:34,551][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:34,552][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 16 succeeded, trying batch size 32
+[2023-08-14 10:43:36,643][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:36,644][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 32 succeeded, trying batch size 64
+[2023-08-14 10:43:39,845][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:39,846][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 64 succeeded, trying batch size 128
+[2023-08-14 10:43:43,654][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:43,655][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 128 succeeded, trying batch size 256
+[2023-08-14 10:43:48,956][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:48,957][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 256 succeeded, trying batch size 512
+[2023-08-14 10:43:54,752][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:43:54,752][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 512 succeeded, trying batch size 1024
+[2023-08-14 10:44:11,453][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:44:11,536][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 1024 succeeded, trying batch size 2048
+[2023-08-14 10:46:35,066][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:46:35,134][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2048 succeeded, trying batch size 4096
+[2023-08-14 10:58:27,147][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 10:58:27,208][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4096 succeeded, trying batch size 8192
+[2023-08-14 11:54:28,907][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 11:54:28,917][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 11:54:28,998][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 11:54:28,998][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 11:54:29,001][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 11:54:29,427][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-14 11:54:29,428][aim.utils.tracking][WARNING] -                  Aim collects anonymous usage analytics.                 
+[2023-08-14 11:54:29,428][aim.utils.tracking][WARNING] -                         Read how to opt-out here:                         
+[2023-08-14 11:54:29,428][aim.utils.tracking][WARNING] -     https://aimstack.readthedocs.io/en/latest/community/telemetry.html    
+[2023-08-14 11:54:29,428][aim.utils.tracking][WARNING] - --------------------------------------------------------------------------
+[2023-08-14 11:54:29,586][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 11:54:29,590][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 11:54:29,591][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 11:54:29,591][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 11:54:29,594][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 11:54:29,594][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 11:54:29,595][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 11:54:29,684][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 11:54:29,702][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 11:54:29,702][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 11:54:29,702][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 11:54:29,703][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 11:54:29,703][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 11:54:29,725][aim.sdk.reporter][INFO] - creating RunStatusReporter for ce0dbea2ea31415db878bd05
+[2023-08-14 11:54:29,725][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 11:54:29,725][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f61c81ca850>
+[2023-08-14 11:54:29,910][classifier.train][INFO] - Running LR Finder!
+[2023-08-14 12:04:03,236][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=1` reached.
+[2023-08-14 12:04:03,237][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-14_11-54-28/0/.lr_find_e51b68bc-77e4-4c44-b71a-f1dc7d643867.ckpt
+[2023-08-14 12:04:03,266][pytorch_lightning.utilities.rank_zero][INFO] - Restored all states from the checkpoint at /workspace/TSOA-Emlops-Deep-Learning-package/logs/train/multiruns/2023-08-14_11-54-28/0/.lr_find_e51b68bc-77e4-4c44-b71a-f1dc7d643867.ckpt
+[2023-08-14 12:04:03,372][classifier.train][INFO] - Running Batch Size Finder!
+[2023-08-14 12:04:04,924][aim.sdk.reporter][INFO] - creating RunStatusReporter for ce0dbea2ea31415db878bd05
+[2023-08-14 12:04:04,924][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 12:04:04,925][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f61c871fcd0>
+[2023-08-14 12:04:15,355][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:15,356][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2 succeeded, trying batch size 4
+[2023-08-14 12:04:16,061][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:16,061][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4 succeeded, trying batch size 8
+[2023-08-14 12:04:16,755][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:16,755][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 8 succeeded, trying batch size 16
+[2023-08-14 12:04:17,540][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:17,540][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 16 succeeded, trying batch size 32
+[2023-08-14 12:04:18,523][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:18,523][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 32 succeeded, trying batch size 64
+[2023-08-14 12:04:19,855][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:19,856][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 64 succeeded, trying batch size 128
+[2023-08-14 12:04:21,752][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:21,752][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 128 succeeded, trying batch size 256
+[2023-08-14 12:04:27,419][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:27,419][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 256 succeeded, trying batch size 512
+[2023-08-14 12:04:38,036][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:38,036][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 512 succeeded, trying batch size 1024
+[2023-08-14 12:04:48,025][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:04:48,025][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 1024 succeeded, trying batch size 2048
+[2023-08-14 12:06:02,260][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:06:02,342][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 2048 succeeded, trying batch size 4096
+[2023-08-14 12:14:36,540][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:14:36,599][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 4096 succeeded, trying batch size 8192
+[2023-08-14 12:57:44,958][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 12:57:45,015][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 8192 succeeded, trying batch size 16384
+[2023-08-14 14:25:47,381][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=3` reached.
+[2023-08-14 14:25:47,462][pytorch_lightning.utilities.rank_zero][INFO] - Batch size 16384 succeeded, trying batch size 32768
+[2023-08-14 17:35:41,892][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 17:35:41,915][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 17:35:42,318][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 17:35:42,319][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 17:35:42,322][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 17:35:42,933][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 17:35:42,938][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 17:35:42,940][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 17:35:42,940][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 17:35:42,943][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 17:35:42,944][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 17:35:42,945][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 17:35:43,056][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 17:35:43,082][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 17:35:43,082][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 17:35:43,082][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 17:35:43,083][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 17:35:43,083][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 17:35:43,114][aim.sdk.reporter][INFO] - creating RunStatusReporter for 60b6ceeb198247839789cdc2
+[2023-08-14 17:35:43,115][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 17:35:43,115][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fa742b8ef90>
+[2023-08-14 17:35:43,424][classifier.train][INFO] - Starting training!
+[2023-08-14 17:38:24,016][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 17:38:24,061][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 17:38:24,551][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 17:38:24,552][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 17:38:24,556][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 17:38:25,388][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 17:38:25,420][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 17:38:25,422][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 17:38:25,423][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 17:38:25,487][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 17:38:25,487][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 17:38:25,488][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 17:38:25,639][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 17:38:25,718][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 17:38:25,718][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 17:38:25,718][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 17:38:25,718][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 17:38:25,719][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 17:38:25,746][aim.sdk.reporter][INFO] - creating RunStatusReporter for aeb60d6185c44bdcaa8747ca
+[2023-08-14 17:38:25,747][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 17:38:25,747][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f23ba24e8d0>
+[2023-08-14 17:38:26,132][classifier.train][INFO] - Starting training!
+[2023-08-14 17:39:23,263][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 17:39:23,279][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 17:39:23,916][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 17:39:23,917][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 17:39:23,920][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 17:39:24,715][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 17:39:24,719][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 17:39:24,721][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 17:39:24,721][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 17:39:24,730][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 17:39:24,731][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 17:39:24,732][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 17:39:24,861][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 17:39:24,958][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 17:39:24,958][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 17:39:24,958][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 17:39:24,958][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 17:39:24,959][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 17:39:25,025][aim.sdk.reporter][INFO] - creating RunStatusReporter for a9ff9a4fd2c248d390c98515
+[2023-08-14 17:39:25,026][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 17:39:25,027][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f52c41f7810>
+[2023-08-14 17:39:25,520][classifier.train][INFO] - Starting training!
+[2023-08-14 17:41:05,044][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 17:41:05,062][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 17:41:05,165][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 17:41:05,165][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 17:41:05,168][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 17:41:05,770][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 17:41:05,775][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 17:41:05,778][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 17:41:05,778][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 17:41:05,816][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 17:41:05,817][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 17:41:05,818][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 17:41:05,958][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 17:41:05,984][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 17:41:05,985][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 17:41:05,985][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 17:41:05,985][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 17:41:05,985][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 17:41:06,040][aim.sdk.reporter][INFO] - creating RunStatusReporter for 55eb8c91e6bc4e5ea587de01
+[2023-08-14 17:41:06,041][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 17:41:06,041][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f675cd30110>
+[2023-08-14 17:41:06,445][classifier.train][INFO] - Starting training!
+[2023-08-14 17:47:11,750][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 17:47:11,779][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 17:47:12,131][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 17:47:12,132][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 17:47:12,135][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 17:47:12,730][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 17:47:12,733][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 17:47:12,735][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 17:47:12,735][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 17:47:12,738][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 17:47:12,738][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 17:47:12,739][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 17:47:12,841][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 17:47:12,866][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 17:47:12,867][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 17:47:12,867][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 17:47:12,867][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 17:47:12,867][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 17:47:12,893][aim.sdk.reporter][INFO] - creating RunStatusReporter for 88925e7e930c46beb6bc42e4
+[2023-08-14 17:47:12,894][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 17:47:12,894][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f9e20d23010>
+[2023-08-14 17:47:13,133][classifier.train][INFO] - Starting training!
+[2023-08-14 17:48:50,770][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 17:48:50,829][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 17:48:51,052][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 17:48:51,053][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 17:48:51,058][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 17:48:52,377][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 17:48:52,419][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 17:48:52,424][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 17:48:52,425][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 17:48:52,433][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 17:48:52,435][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 17:48:52,438][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 17:48:52,828][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 17:48:52,928][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 17:48:52,929][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 17:48:52,929][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 17:48:52,929][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 17:48:52,930][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 17:48:53,021][aim.sdk.reporter][INFO] - creating RunStatusReporter for 223a5c922d9240588c630c2e
+[2023-08-14 17:48:53,022][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 17:48:53,022][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7facfe3f4810>
+[2023-08-14 17:48:54,933][classifier.train][INFO] - Running LR Finder!
+[2023-08-14 18:27:22,040][classifier.train][INFO] - Instantiating datamodule <classifier.data.harryPotter_dataModule.HarryPotterDataModule>
+[2023-08-14 18:27:22,056][classifier.train][INFO] - Instantiating model <classifier.models.gpt_module.GPTLitModule>
+[2023-08-14 18:27:22,105][classifier.train][INFO] - Instantiating loggers...
+[2023-08-14 18:27:22,106][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.csv_logs.CSVLogger>
+[2023-08-14 18:27:22,109][classifier.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-08-14 18:27:22,543][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.MLFlowLogger>
+[2023-08-14 18:27:22,546][classifier.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-08-14 18:27:22,548][classifier.train][INFO] - Instantiating callbacks...
+[2023-08-14 18:27:22,548][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-08-14 18:27:22,550][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-08-14 18:27:22,550][classifier.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-08-14 18:27:22,551][classifier.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-08-14 18:27:22,637][pytorch_lightning.utilities.rank_zero][INFO] - Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.rich_model_summary.RichModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+[2023-08-14 18:27:22,659][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: False, used: False
+[2023-08-14 18:27:22,660][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-08-14 18:27:22,660][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-08-14 18:27:22,660][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-08-14 18:27:22,660][classifier.train][INFO] - Logging hyperparameters!
+[2023-08-14 18:27:22,682][aim.sdk.reporter][INFO] - creating RunStatusReporter for 05e7c2751f874e2eb1836f7e
+[2023-08-14 18:27:22,683][aim.sdk.reporter][INFO] - starting from: {}
+[2023-08-14 18:27:22,683][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7f3f0009a8d0>
+[2023-08-14 18:27:22,879][classifier.train][INFO] - Starting training!

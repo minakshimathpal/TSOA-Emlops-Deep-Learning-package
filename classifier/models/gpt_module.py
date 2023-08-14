@@ -226,9 +226,12 @@ class GPTLitModule(LightningModule):
     def __init__(
         self,
         net: GPT,
-        # learning_rate=1e-3,
-        # n_embed=64,
-        # block_size=8
+        optimizer:torch.optim.Optimizer,
+        scheduler:torch.optim.lr_scheduler,
+        learning_rate=1e-3,
+        n_embed=64,
+        block_size=8
+        
     ):
         super().__init__()
 

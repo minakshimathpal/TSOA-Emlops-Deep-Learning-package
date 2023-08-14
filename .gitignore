@@ -153,6 +153,6 @@ configs/local/default.yaml
 
 # Aim logging
 .aim
-temp
+# temp
 /data
 /logs
